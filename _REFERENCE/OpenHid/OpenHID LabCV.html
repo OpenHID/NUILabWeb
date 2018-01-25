@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://openhid.com/fortega/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>OpenHID Lab</title>
+      
+      <!-- Search Engines-->
+      <meta name="author" content="Florida International University - OpenHID Lab">
+      <meta name="description" content="The OpenHID Lab of Florida International University, dedicated to the research and development of 3D User Interfaces, Virtual Environments, among other topics.">
+      <meta name="keywords" content="florida, international, miami, university, research, lab, graphics, human interface device, IO, Computer Science (CS), FIU SCIS, FIU CS, computer graphics, mathematics, rendering, demo, 3D, realtime, shader, raytracing, glsl">
+      <!-- Twitter-->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@OpenHID">
+      <meta name="twitter:title" content="OpenHID Lab @ FIU CIS">
+      <meta name="twitter:description" content="The OpenHID Lab of Florida International University, dedicated to the research and development of 3D User Interfaces, Virtual Environments, among other topics.">
+      <meta name="twitter:image" content="http://openhid.com/assets/brand/cover.jpg">
+      <!-- Facebook-->
+      <meta property="og:title" content="OpenHID Lab @ FIU CIS">
+      <meta property="og:url" content="htt://OpenHID.com">
+      <meta property="og:site_name" content="OpenHID Lab">
+      <meta property="og:image" content="http://openhid.com/assets/brand/cover.jpg" itemprop="thumbnailUrl">
+      <!-- Icons/Mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <link rel="apple-touch-icon" href="http://openhid.com/assets/brand/icon-57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="http://openhid.com/assets/brand/icon-72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="http://openhid.com/assets/brand/icon-114.png">
+      <link rel="shortcut icon" href="http://openhid.com/assets/brand/icon.ico">
+      <link rel="stylesheet" href="file:///C:/Users/Francisco/.atom/packages/markdown-preview-enhanced/node_mod/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+
+      
+      
+      
+
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none} 
+       
+      </style>
+    </head>
+    <body for="html-export" cz-shortcut-listen="true">
+      <div class="mume markdown-preview   ">
+      <center> <h1>Francisco R. Ortega</h1></center>
+<div style="float:left">
+    <p align="left">
+      8933 SW 123rd. CT #204<br>
+      Miami FL - 33186<br>
+      <a href="http://openhid.com/">http://openhid.com/</a>
+    </p>
+</div>
+<div>
+    <p align="right">
+      Phone: (305) 305-6391<br>
+      Email: fortega@cs.fiu.edu<br>
+      Alt: FranciscoRaulOrtega@gmail.com
+    </p>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">particulars</h2>
+<hr style="margin-top:0; margin-bottom:0">
+<h3 style="font-variant: small-caps; margin-top:0.2em">education</h3>
+<div id="ed_accolades" style="margin-left: 2.4em; margin-right:2.4em">
+  <!-- phd-->
+  <div style="float:left">
+      <p align="left">
+        Florida International University<br>
+        Ph. D. in Computer Science - GPA: 3.72<br>
+      </p>
+  </div>
+  <div>
+      <p align="right">
+        Miami, FL<br>
+        Fall 2014<br>
+      </p>
+  </div>
+  <!-- masters -->
+  <div style="float:left">
+      <p align="left">
+        Florida International University<br>
+        M. S. in Computer Science - GPA: 3.8<br>
+      </p>
+  </div>
+  <div>
+      <p align="right">
+        Miami, FL<br>
+        Fall 2008<br>
+      </p>
+  </div>
+  <!-- bachelors -->
+  <div style="float:left">
+      <p align="left">
+        Florida International University<br>
+        B. S. in Computer Science - GPA: 3.5 - In-major GPA: 3.7<br>
+      </p>
+  </div>
+  <div>
+      <p align="right">
+        Miami, FL<br>
+        Fall 2007<br>
+      </p>
+  </div>
+</div>
+<h3 style="font-variant: small-caps; margin-top:0.2em">research interests</h3>
+<p style="margin-left: 2.4em; align=justify">My research interests include Human-Computer Interaction, Gesture Elicitation, Gesture Recogni-
+tion, 3D User Interfaces, 3D Navigation, 3D Interaction, Multi-Modal Interaction, and Input Tech-
+nologies, and Virtual Environments.</p>
+<p style="margin-left: 2.4em; align=justify">Additional interests include the areas of Augmented Reality, Virtual Reality, Affective Computing,
+Computer Graphics, Software Design, Networking, Cyber Security, and Machine Learning.</p>
+<h3 style="font-variant: small-caps; margin-top:0.2em">dissertation</h3>
+<p style="margin-left: 2.4em; align=justify">
+Title: 3D Navigation with Six Degrees-of-Freedom Using a Multi-Touch Display<br>
+Advisors: Dr. Armando Barreto and Dr. Naphtali Rishe
+</p>
+<p style="margin-left: 2.4em; align=justify">
+My dissertation provides an in-depth view of multi-touch technology used in 3D navigation. It
+includes a feature-extraction algorithm for multi-touch displays (FETOUCH), a multi-touch and
+gyroscope interaction technique (Gyro-Touch), a theoretical model for multi-touch interaction using
+high-level Petri Nets (PeNTa), a proposed gesture (Hold-and-Roll), and a 3D navigation user study
+which compares a multi-touch display and game controller in a pseudo-universe.
+</p>
+<h3 style="font-variant: small-caps; margin-top:0.2em">miscellaneous</h3>
+<p style="margin-left: 2.4em; align=justify">
+Nationalities: U.S. Citizen, Chilean Citizen.
+</p>
+<p style="margin-left: 2.4em; align=justify">
+Ethnicity: Hispanic.
+</p>
+<p style="margin-left: 2.4em; align=justify">
+</p>
+<h2 style="font-variant: small-caps; margin-bottom:0">academic honors</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ul>
+    <li>Nominated for College of Engineering Dissertation of the Year Award, 2014.</li>
+    <li>Best Overall Graduate Student of the School of Computing and Information Sciences of the Year Award, 2014.</li>
+    <li>Ph.D. GAANN Fellowship awarded by the US Department of Education, 4 years.</li>
+    <li>McKnight Dissertation Fellowship awarded by Florida Education Fund, 4 semesters.</li>
+    <li>Microsoft and Tapia Conference Gaming Code-A-Thon First Prize: Xbox ONE ($500.00), 2014.</li>
+    <li>$986.00 Tapia Conference Scholarship Award, 2014.</li>
+    <li>$350.00 US Dollars ACM I3D 2013 conference stipend, 2013.</li>
+    <li><i>Cum Laude</i> honors for Bachelors in Computer Science, 2007.</li>
+  </ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">work experience</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left: 1.5em">
+<ul>
+  <li><b>Visiting Assistant Professor, Director of OpenHID Lab, Florida International University,</b>
+    Fall 2016 - Present.</li>
+    <ul style="list-style-type: circle">
+      <li>Mentoring several students on their Capstone projects in Computer Science and Electrical and Compute Engineering.</li>
+      <li>Mentoring lab (undergraduate and graduate) research assistants.</li>
+      <li>Researching gesture recognition, gesture elicitation, 3D navigation, the use of virtual reality to
+      increase interest in Computer Science, and input technologies.</li>
+      <li>Taught several courses for Computer Science and Electrical and Computer Engineering.</li>
+      <li>Collaborating in writing grants with a number of different collaborators as CO-PI and PI.</li>
+    </ul>
+  
+</ul>
+<ul>
+  <li><b>VIP Coordinator, Florida International University,</b> Spring 2016 â€“ present.</li>
+    <ul style="list-style-type: circle">
+      <li>Managing logistics for the Vertically Integrated Projects (VIP) program at Florida International
+      University.</li>
+      <li>Performing administrative tasks including bi-yearly grant reports and VIP course logistics.</li>
+      <li>Created VIP courses for undergraduate and graduate students.</li>
+      <li>Instructing VIP courses for undergraduate.</li>
+      <li>Instructed VIP courses graduate students.</li>
+      <li>Supervised 13 VIP students for 6 months. The students helped to collect data.</li>
+      <li>Reached department chairs and faculty to recruit them for the VIP project.</li>
+      <li>Developed a collaborative relationship with the Honors College and the Provost office to en-
+      hance the VIP program.</li>
+    </ul>
+  
+</ul>
+<ul>
+  <li><b>Visiting PostDoc Fellow, Director of OpenHID Lab,</b> Florida International University,
+  Spring 2015 â€“ Summer 2016.</li>
+    <ul style="list-style-type: circle">
+      <li>Mentored several students on their Capstone projects in Computer Science and Electrical and
+      Computer Engineering.</li>
+      <li>Mentored lab (undergraduate and graduate) research assistant.</li>
+      <li>Researched 3D navigation, multi-modal interaction, and input technologies.</li>
+      <li>Co-authored a book titled Interaction Design for 3D User Interfaces.</li>
+      <li>Taught several courses for Computer Science and Electrical and Computer Engineering.</li>
+      <li>Mentored an Honors College Student for a period of two semesters.</li>
+      <li>Provided workshops for a range of topics topics, including C and C++.</li>
+      <li>Wrote grants with a number of different collaborators as CO-PI.</li>
+      <li>Created a new graduate course, called 3D User Interaction.</li>
+      <li>Collaborated with the Florida Consortium (FLC) to look for ways to increase STEM funding
+      for USF, UCF, and FIU. In addition, worked on a multi-university proposal for the colleges of
+      engineering at USF, UCF, and FIU.</li>
+    </ul>
+  
+</ul>
+<ul>
+  <li><b>Research &amp; Teacher Assistant, Florida International University,</b> Spring 2009 â€“ Fall 2014.
+</li>
+    <ul style="list-style-type: circle">
+      <li>Developed prototype using C++ Multi-Touch Win32 application with OpenGL for proposal.</li>
+      <li>Developed prototype to test WiiMote using wiiLib in C++.</li>
+      <li>Designed prototype using C++, OGRE3D, and Win32 API using WiiMote and Multi-Touch.</li>
+      <li>Taught Web Site Management and Construction and Programming I LAB.</li>
+      <li>Coached Programming Competition (Fall 2012)</li>
+    </ul>
+  
+</ul>
+<ul>
+  <li><b>Software Engineer, IBLUES Corporation,</b> Fall 1999 â€“ Fall 2014</li>
+    <ul style="list-style-type: circle">
+      <li>Developed and designed from the ground up, CUBE, a .Net Windows and ASP.NET Inventory
+      software.</li>
+      <li>Designed and developed the Estee Lauder Retail Sales application, a .NET automated import
+      utility for data consolidation.</li>
+      <li>Served as Lead Designer for the Estee Lauder data consolidation project. This included a .Net
+      windows application, ETL procedures in .NET, MS-SQL Server 2000 database design, EDI
+      price catalog, and Crystal Reports.</li>
+      <li>Managed three offshore developers in Chile for Estee Lauder.</li>
+      <li>Managed two offshore developers in Colombia.</li>
+    </ul>
+  
+</ul>
+<ul>
+  <li><b>Operator &amp; Asst. SysAdmin, Tecnicard, Inc.,</b> Spring 1994 â€“ Fall 1999</li>
+    <ul style="list-style-type: circle">
+      <li>Worked as a system operator and provided assistance to system administrators.</li>
+      <li>Provided system administration for OpenVMS running on Alpha and VAX systems.</li>
+      <li>Developed C programs and DCL scripts for OpenVMS system automation tasks.</li>
+    </ul>
+  
+</ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">research experience</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ul>
+    <li><b>Real-Time Gesture Recognition: A Circular Fashion</b>, (Spring 2014 â€“ Present) â€“ The typical
+gesture recognition algorithm provides classification at the end of the gesture. In simple cases, it is
+possible to provide an accurate classification when the gesture is ongoing. However, classification
+for gestures (not symbols) before completion provide a more complex challenge, in particular when
+the response has to match the interaction and system resources. We have looked at several gesture
+classification techniques, including Rubineâ€™s algorithm, Dollar family, and gesture coder â€“ among
+others. We have combined our own work with the aforementioned classifiers in order to create
+better recognizers. In face of the low classification success we had, we have noticed certain patterns
+that made us rethink the problem. We have now found a novel approach based on the concept of
+multi-touch gestures, which in some cases, are angular gestures. From there we derived our latest
+work called CircGR. In our latest findings, we have found that our recognition rates for multi-touch
+displays during early gesture detection provide correct classification results not achieved before. A
+submission was acccepted in ACM Interactive Surface and Spaces 2017. This is an ongoing research,
+and we believe that we will continue to derive further findings for complex 3D gestures.</li><br>
+    <li><b>3D Navigation: User Studies and Gesture Elicitation</b>, (Spring 2012 â€“ Present) â€“ One of the
+earliest questions my colleagues and I had was how to keep improving 3D navigation with multi-touch
+displays. Over time, this question has evolved to other input devices, including vision-based cameras
+(mid-air interaction). This led us to the following question: What is the correct gesture set for a
+given interaction? We know that gesture elicitation has provided pathways to find them. However,
+this has some critics in the community doubting its efficacy. Therefore, we decided to start working
+on performing a series of gesture elicitation studies with two objectives: (i) Find a gesture set when
+possible. (ii) Measure the quality of gesture elicitation when using different techniques. Our latest
+publication on the topic of gesture elicitation was accepted in the IEEE 3DUI Symposium, part of
+the IEEE VR conference (2017).</li><br>
+    <li><b>CS Education: Increase Recruitment and Retention of Women in Computer Science
+using Virtual and Augmented Reality</b>, (Summer 2016 â€“ Present) â€“ The number of women and
+minorities in Computer Science is significantly low. This number is even lower among the Hispanic
+and African-American populations. To improve low-enrollment rates among these populations, I
+started searching for ways to help in this area using my current expertise. With a problem this large,
+I am concentrating in entry-level college women in non-CS degrees. This research includes the use
+of Virtual Reality games to increase interest by showing programming concepts.</li><br>
+<li><b>Modeling Users for 3D User Interfaces</b>, (Spring 2015 â€“ Present) â€“ After I completed my
+dissertation and classified my users using previous ad-hoc techniques, a question still remained: is it
+possible to model user types (e.g., experienced gamer versus casual gamer) for specific scenarios? We
+are currently looking at how to model first person shooters with several user studies. If successful,
+it will provide a great way to classify user cues for 3D navigation user studies.</li><br>
+<li><b>Multi-Touch Interaction and Input Techniques</b>, (Spring 2011 â€“ Present) â€“ The central theme
+of my dissertation research was to look at multi-touch interaction and ways to improve 3D navigation.
+This research has provided multiple publications to improve the state-of-the-art as well as to continue
+looking at new forms of multi-touch interaction and gesture recognition.</li><br>
+<li><b>PeNTa: Formal Modeling for Multi-Touch Systems Using Petri Net</b>, (Spring 2013 â€“ Spring
+2015) â€“ Together with a Petri Nets (PNs) expert researcher, we looked at the possibility to define
+a mathematical model for gesture recognition using high-Level PNs. This provided an interesting
+outlook into ways of creating distributed systems of recognition. Currently, we have not furthered
+the research in this area in favor of our new CircGR efforts, but PeNTa, with further work and
+implementation, could provide a rigorous mathematical framework for real-time systems.</li><br>
+<li><b>Affective Computing</b>, (Spring 2009 â€“ Fall 2010) â€“ This research focused on in the ability for
+systems to detect gesture recognition using sensors (e.g., galvanic skin response) to determine the
+user stress levels and affective state. In addition, we provided embodied conversational agents for
+social work research that looked into methods for sexual protection (e.g., condoms). While this
+area of research was continued as other research projects, it provided insight into sensors for user
+interaction and has allowed me to contribute to other projects, where I am a co-author of their
+publications. While I did not continue active research in this area, the understanding of psycho-
+physiological signals has helped to integrate them with motions sensors for technology transfer (e.g.,
+patents) efforts.</li><br>
+  </ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">grants</h2>
+<hr style="margin-top:0; margin-bottom:0">
+<h3 style="font-variant: small-caps; margin-top:0.2em">awarded</h3>
+<div style="margin-left:1.5em">
+  <ul>
+    <li>CO-PI: Florida Center for Cybersecurity (FC2), University of South Florida, â€œUsing a Cyberlearning Environment to Enhance Critical Cybersecurity Educationâ€, $100,000, 2017.</li>
+    <li>PI: â€œNIH-NIDA SUD Challenge â€“ BioBrace VR: Bio-Interactive Device with Personalized Avatar
+        Therapy for SUDâ€, $10,000, Awarded to BioMagic VR, Inc. in preparation for STTR/SBIR.</li>
+    <li> â€œFlorida Consortium of Metropolitan Research Universities, Summer Grantâ€, $3,000, 2016.</li>
+    <li>â€œIUCRU CAKE additional membership fees from OverIT (Italian-based company)â€, $3,000, June,
+        2016.</li>
+    <li>â€œIUCRU CAKE membership fees from OverIT (Italian-based company)â€, $5,000, June, 2016.</li>
+    <li>â€œIUCRU CAKE membership fees from Polymer Braille Incâ€, $5,000, June, 2016.</li>
+  </ul>
+</div>
+<h3 style="font-variant: small-caps; margin-top:0.2em">not funded</h3>
+<div style="margin-left:1.5em">
+  <ul>
+    <li>CO-PI: â€œNSF MRI 2017: Development of a GeoSpatial Instrument for Analysis and Interaction with
+    Super-resolution Aerial Imageryâ€,$1,995,000, 2017.</li>
+    <li>PI: â€œNSF I-USE 2017 â€“ EHR: New 3D Virtual Programming Language and Game-based Learning
+    Paradigm and Evaluation of their Effectiveness in Improving Recruitment and Retention of Women
+    in Computer Scienceâ€, $300,000, 2017.</li>
+  </ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">teaching experience</h2>
+<hr style="margin-top:0; margin-bottom:0">
+<h3 style="font-variant: small-caps; margin-top:0.2em">florida international experience</h3>
+<div style="margin-left:1.5em">
+  <ul>
+    <li><b>Instructor.</b> COP 4610 â€“ Operating System Principles: Fall 2017, Fall 2016 (two sections).
+    </li><li><b>Instructor.</b> IDS 3917 (Junior), IDS 4818 (Senior) â€“ Vertically Integrated Projects (Capstone): Fall
+2017, Summer 2017, Spring 2017, Fall 2016.
+    </li><li><b>Instructor.</b> COP 5725 â€“ Principles of RDBMS (graduate): Fall 2017, Spring 2016 (co-instructor).
+    </li><li><b>Instructor.</b> COP 4338 â€“ Programming III (C language): Sunmmer 2017, Summer 2016, Summer 2015 (C/C++), Spring 2015
+    </li><li><b>Instructor.</b> COP 3337 â€“ Programming II (Java): Summer 2017.
+    </li><li><b>Instructor.</b> CNT 4713 â€“ Net-Centric Computing (two sections): Spring 2017.
+    </li><li><b>Instructor.</b> ECE 6803 â€“ Advanced Digital Forensics (graduate): Spring 2017 (FEEDS online only), Spring 2016, Spring 2015.
+    </li><li><b>Instructor.</b> ECE 4802 â€“ Digital Forensics: Spring 2017 (FEEDS online and class), Spring 2016, Spring 2015.
+    </li><li><b>Instructor.</b> COP 4610 â€“ Operating System Principles (two sections): Fall 2016.
+    </li><li><b>Instructor.</b> CNT 5416 â€“ Practical Applied Security (graduate): Fall 2016.
+    </li><li><b>Instructor.</b> TCN-6430 â€“ Network Management and Control Standards (graduate). Fall 2016.
+    </li><li><b>Instructor.</b> COP 4813 â€“ Web Application Programming: Fall 2015 (ASP.NET C#), Spring 2016 (node.js).
+    </li><li><b>Instructor.</b> ECE 6803 â€“ Advanced Digital Forensics (graduate â€“ fully online): Summer 2017,Summer 2016, Summer 2015.
+    </li><li><b>Instructor.</b> EEL 5807 â€“ Advanced Ethical Hacking (graduate â€“ feeds online): Summer 2016, Summer 2015.
+    </li><li><b>Instructor.</b> CGS 4854 â€“ Website Management and Construction: Summer 2012 (Java).
+    </li><li><b>Teaching Assistant.</b> COP 2210L â€“ Programming I (Java): Spring 2012, Fall 2011, Summer 2011, Spring 2011, Fall 2010, Summer 2010.
+    </li><li><b>Teaching Assistant.</b> CGS 2060L â€“ Introduction to Microcomputers: Spring 2010
+    </li><li><b>Teaching Assistant.</b> CAP 5602 â€“ Introduction to Artificial Intelligence: Spring 2009.
+  </li></ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">mentoring experience</h2>
+<hr style="margin-top:0; margin-bottom:0">
+<h3 style="font-variant: small-caps; margin-top:0.2em">directed research - <l style="font-variant: normal; font-size: large;">Current students<l></l></l></h3>
+<div style="margin-left:1.5em">
+  <ul>
+    <li><b>Katherine Tarre, M.S. candidate, Statistics</b>, Summer 2016 â€“ Present â€“ Miss Tarre started as a Statistics undergraduate student, and I have trained her in conducting research dealing with gesture elicitation and user modeling. She has already submitted three publications.</li>
+    <li><b>Lukas Borges, B.S. candidate,Computer Science</b>, Summer 2016 â€“ Present â€“ Mr. Borges has conducted research dealing with augmented reality (for education in the area of architecture) and is currently developing CodeVR, an educational tool for Computer Science.</li>
+    <li><b>Jules Calella, M.S. candidate, in Electrical Engineering</b>, Fall 2015 â€“ Present â€“ Mr. Calella started as an undergraduate student, and is working toward psycho-physiological sensing for wearables devices that will lead into patents and publications.</li>
+  </ul>
+</div>
+<h3 style="font-variant: small-caps; margin-top:0.2em">directed research - <l style="font-variant: normal; font-size: large;">Former students<l></l></l></h3>
+<div style="margin-left:1.5em">
+  <ul>
+    <li><b>Ruben Balcazar, M.S., Computer Science</b>, Summer 2015 â€“ Fall 2017 â€“ Mr. Balcazar conducted research in the field of multi-touch gesture recognition. His first-author paper, CircGR was accepted in ACM Interaction Spatial Surfaces 2017. First job: Ultimate Software, as Software Developer.</li>
+    <li><b>Alain Galvan, B.S., Computer Science</b>, Spring 2015 â€“ Summer 2017 â€“ Mr. Galvan conducted research dealing with procedural generated skys and contributed towards the development of 3D graphics. He co-authored publications in the area of 3D travel and gesture elicitation, among others. First job: Marmoset (created of Marmoset Toolbag) as Computer Graphics Developer.</li>
+    <li><b>Jonathan Bernal, B.S. , Computer Engineering</b>, Summer 2016 â€“ Summer 2017 â€“ Mr. Bernal conducted research dealing with multi-modal interaction. He co-authored several publications.</li>
+    <li><b>Jason-Lee Thomas, B.S., Computer Engineering</b>, Summer 2015 â€“ Fall 2016 â€“ Mr. Thomas developed C++ input device layers to support research. He also supported the development of a mid-air gesture elicitation study with the Microsoft HoloLens. First job: Citrix as Senior Software Developer.</li>
+  </ul>
+</div>
+<h3 style="font-variant: small-caps; margin-top:0.2em">general</h3>
+<div style="margin-left:1.5em">
+  <ul>
+    <li><b>Capstone Senior Project, Computer Science</b>, Spring 2015 - Present â€“ Mentored over 30 students during projects related to 3D user interfaces, including a desktop interactive paint application and a similar one for Microsoft HoloLens, among others.</li>
+    <li><b>Capstone Senior Design, Electrical and Computer Engineering</b>, Spring 2015 - Present â€“ Mentored over 40 student groups (each comprising of 3-5 students) during projects related to 3D user interfaces and hardware design, including input devices, conductive fabric, interactive motion sensors, and bio-signal devices.</li>
+    <li><b>Independent Studies</b>, Summer 2016 â€“ Mentored a student in efforts to develop an automated gesture elicitation tool. The student was required to develop a complete solution while researching gesture elicitation.</li>
+    <li><b>Honors College Research</b>, Fall 2015 â€“ Spring 2017 â€“ Mentored one student over the course of two projects related to gesture recognition and capstone design project for IDH 4007 and IDH 4905.</li>
+    <li><b>VIP Suplemental Team</b>, Spring 2016-Summer 2016 â€“ Mentored 15 students over the course of six-months to help them learn about different aras of research in and outside their fields.</li>
+  </ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">publications</h2>
+<hr style="margin-top:0; margin-bottom:0">
+<h3 style="font-size: large;margin-top:0.2em">Refereed Journals</h3>
+<div style="margin-left:1.5em">
+  <ol>
+    <li><b>Ortega, F.</b>, Tarre, K., Rishe, N., and Barreto, A., â€œ3D Navigation for 6DOF Using Multi-Touch vs. GamePadâ€, <i>under submission in International Journal of HumanComputer Studies</i>, 2017.</li><br>
+    <li>Cofino J., Barreto A., Abyarjoo F., and <b>Ortega, F.</b>, â€œSonically-Enhanced Tabular Screen-Readingâ€, Journal on Technology &amp; Persons with Disabilities (JTPD), Vol. 2, pp. 46â€“57, 2014.</li><br>
+    <li>Ren P., Barreto A., Huang J., Gao Y., <b>Ortega, F.</b>, and Adjouadi, M., â€œOff-line and On-line Stress Detection through Processing of the Pupil Diameter Signal.â€ In <i>Annals of Biomedical Engineering</i>, vol. 42, no. 1, pp. 162â€“176, 2014.</li><br>
+  </ol>
+</div>
+<h3 style="font-size: large;margin-top:0.2em">Refereed Conferences</h3>
+<div style="margin-left:1.5em">
+  <ol start="4">
+    <li>Balcazar, R., <b>Ortega, F.</b>, Tarre, K., Barreto, A., Weiss, M., Rishe, N., â€œCircGR : Real-Time Multi-Touch Circular Gesture Recognitionâ€, to appear in <i>Proceedings of the 2017 ACM on Interactive Surfaces and Spaces (ISS â€™17). Brighton, England</i>.</li><br>
+    <li><b>Ortega, F.</b>, <i>Galvan, A., Tarre, K., Barreto, A., Rishe, N., Bernal, J., Balcazar, R., and Thomas, J., â€œGesture Elicitation for 3D Travel via Multi-Touch and Mid-Air Systems for Procedurally Generated Pseudo-Universe.â€ In 2017 IEEE Symposium on 3D User Interfaces (3DUI), Los Angeles, CA, 2017, pp 144â€“153.</i></li><br>
+    <li><i>Tangnimitchok, S., O-Larnnithipong, N., Barreto, A.,</i><b>Ortega, F. R.</b><i>, and Rishe, N. D., â€œFinding an Efficient Threshold for Fixation Detection in Eye Gaze Tracking.â€ In International Conference on Human-Computer Interaction, Interaction Platforms and Techniques of the series Lecture Notes in Computer Science- Volume 9732, pp. 93-103, Springer-Verlag New York, Inc., Jul. 2016.</i></li><br>
+    <li><i>Abyarjoo, F., O-Larnnithipong, N., Tangnimitchok, S., Adjouadi, M.,<b> Ortega, F.</b><i>, and Barreto, A., â€œPostureMonitor: Real-Time IMU Wearable Technology to Foster Poise and Health.â€ In International Conference of Design, User Experience, and Usability of the series Lecture Notes in Computer Science, vol. 9188, Springer International Publishing, pp 543â€“552, Aug. 2015.</i></i></li><br>
+    <li><b>Ortega, F.</b><i>, Barreto, A., Rishe, N., Adjouadi, M., Abyarjoo, F., and O-Larnnithipong, N., â€œGyroTouch: Wrist Gyroscope with a Multi-Touch Display.â€ In International Conference on Human-Computer Interaction, Human-Computer Interaction: Interaction Technologies of the series Lecture Notes in Computer Science, vol. 9170, pp. 262â€“270, Springer International Publishing, Aug. 2015.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Barreto, A., Rishe, N., Adjouadi, M., and Abyarjoo, F., â€œMulti-Touch Gesture Recognition Using Feature Extraction.â€ In Innovations and Advances in Computing, Informatics, Systems Sciences, Networking and Engineering of the series Lecture Notes in Electrical Engineering, vol. 313, pp. 291â€“296, Springer International Publishing, 2015.</i></li><br>
+    <li><i>Abyarjoo, F., Barreto, A., Cofino, J., and </i><b>Ortega, F.</b><i>, â€œImplementing a Sensor Fusion Algorithm for 3D Orientation Detection with Inertial/Magnetic Sensors.â€ In Innovations and Advances in Computing, Informatics, Systems Sciences, Networking and Engineering of the series Lecture Notes in Electrical Engineering, vol. 313, pp. 305â€“310, Springer International Publishing, 2015.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Liu, S., Hernandez, F., Barreto, A., Rishe, N., and Adjouadi, M., â€œPeNTa: Multi-Touch Modeling using Petri Nets.â€ In International Conference on Human-Computer Interaction, Human-Computer Interaction: Theories, Methods, and Tools of the series Lecture Notes in Computer Science, HCI International 2014), vol 8510, pages 361â€“372. Springer International Publishing, June 2014.</i></li><br>
+    <li><i>Cofino, J., Barreto, A., Abyarjoo, F., and </i><b>Ortega, F.</b><i>, â€œSonifying HTML Tables for Audio-Spatially Enhanced Non-Visual Navigation.â€ In IEEE SoutheastCon, 2013 Proceedings of IEEE, Jacksonville, FL, pp. 1â€“5, 2013.</i></li><br>
+    <li><i>Abyarjoo, F., Barreto, A., Abyarjoo, S., </i><b>Ortega, F.</b>, and Cofino, J., â€œMonitoring Human Wrist Rotation in Three Degrees of Freedom.â€ In IEEE SoutheastCon, 2013 Proceedings of IEEE, Jacksonville, FL, pp. 1â€“5, 2013</li><br>
+    <li><b>Ortega, F.</b><i>, Barreto, A., Rishe, N., and Adjouadi, M., â€œInteraction with 3D Environments Using Multi-Touch Screens.â€ In Innovations and Advances in Computer, Information, Systems Sciences, and Engineering of the series Lecture Notes in Electrical Engineering, vol. 152, pp. 381â€“392, CISSE. Springer, New York, 2013.</i></li><br>
+    <li><i>Wu, Y., Hernandez, F., </i><b>Ortega, F.</b><i>, Clarke, P., and France, R., â€œMeasuring the Effort for Creating and Using Domain-Specific Models.â€ In Proceedings of the 10th Workshop on Domain-Specific Modeling (DSM â€™10). ACM, New York, NY, USA, article 14, pages 6, 2010.</i></li><br>
+    <li><i>Verhoef, T., Lisetti, C., Barreto, A., </i><b>Ortega, F.</b><i>, Van der Zant, T., and Cnossen, F., â€œBio-sensing for Emotional Characterization without Word Labels.â€ In Human-Computer Interaction. Ambient, Ubiquitous and Intelligent Interaction, 13th International Conference, HCI International. LNCS 5612, pp. 693â€“702, 2009.</i></li><br>
+  </ol>
+</div>
+<h3 style="font-size: large;margin-top:0.2em">Workshop and Poster Refereed Papers</h3>
+<div style="margin-left:1.5em">
+  <ol start="17">
+    <li><b>Ortega, F.</b><i>, Jamides, S., Barreto, A., and Rishe, N., â€œThe Tabletop is dead. Long Live the Tabletop!â€, to appear in The Disappearing Tabletop: Social and Technical Challenges for Cross-Surface Collaboration workshop on Interactive Surfaces and Spaces (ISS â€™17).</i></li><br>
+    <li><b>Ortega, F.</b><i>, Bolivar, S., Bernal, J., Galvan, A., Tarre, K., Rishe, N., and Barreto, A., â€œTowards a 3D Virtual Programming Language to Increase the Number of Women in Computer Science Education.â€ In 2017 IEEE Virtual Reality Workshop on K-12 Embodied Learning through Virtual &amp; Augmented Reality (KELVAR), Los Angeles, CA. pp. 1â€“6.</i></li><br>
+    <li><i>Galvan, A., </i><b>Ortega, F.</b><i>, and Rishe, N., â€œProcedural Celestial Rendering for 3D Navigation.â€ In 2017 IEEE Symposium on 3D User Interfaces (3DUI), Los Angeles, CA. 2017. pp. 211â€“212</i></li><br>
+    <li><i>Calella, J., </i><b>Ortega, F.</b><i>, Rishe, N., Barreto, A., and Bernal, J., â€œHandMagic: Towards User Interaction with Inertial Measuring Units.â€ In 2016 IEEE SENSORS. Orlando, FL. 2016, pp. 1-3.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Balcazar, R., Barreto, A., and Rishe, N., â€œSmart Learning Desk: Towards an Interactive Classroom.â€ In IEEE Virtual Reality 2016 Workshop on K-12 Embodied Learning through Virtual &amp; Augmented Reality (KELVAR â€™16), Mar. 2016.</i> Available at: <a href="https://sites.google.com/site/vrkelvar/vr2016">https://sites.google.com/site/vrkelvar/vr2016</a></li><br>
+    <li><i>Vassigh, S., Elias, A., <b>Ortega, F.</b>, Davis, D., Gallardo, G., Alhaffar, H., Borges, L., Bernal, J., and Rishe, N., â€œIntegrating Building Information Modeling with Augmented Reality for Interdisciplinary Learning.â€ In Mixed and Augmented Reality (ISMAR-Adjunct), 2016 IEEE International Symposium on, pp. 260â€“261, IEEE, 2016.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Rishe, N., and Barreto, A., â€œTAMGeF: Touch-midAir-Motion Framework for Spatial Input.â€ In Proceedings of the 3rd ACM Symposium on Spatial User Interaction (SUI â€™15). ACM, New York, NY, USA, pp. 136, 2015.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Barreto, A., Rishe, N., Adjouadi, M., and Liu, S., â€œExploring Modeling Language for Multi-Touch Systems Using Petri Nets.â€ In Proceedings of the 2013 ACM International Conference on Interactive Tabletops and Surfaces (ITS â€™13), ACM, New York, NY, USA. pp. 361â€“364. 2013.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Barreto, A., and Rishe, N., â€œAugmenting Multi-Touch with Commodity Devices.â€ In Proceedings of the 1st Symposium on Spatial User Interaction (SUI 13). ACM, New York, NY, USA, p. 95. 2013.</i></li><br>
+    <li><b>Ortega, F.</b><i>, Barreto, A., Rishe, N. and Adjouadi, M., and Abyarjoo, F., â€œPoster: Real-Time Gesture Detection for Multi-Touch Devices.â€ In IEEE 8th Symposium on 3D User Interfaces, pp. 167-168. 2013.</i></li><br>
+    <li><i>Hernandez, H., </i><b>Ortega, F.</b><i>, â€œEberos GML2D: A Graphical Domain-Specific Language for Modeling 2D Video Games.â€ In Proceedings of the 10th Workshop on Domain-Specific Modeling (DSM â€™10). ACM, New York, NY, USA, article 4, pages 6, 2010.</i></li><br>
+  </ol>
+</div>
+<h3 style="font-size: large;margin-top:0.2em">Other Referred Papers</h3>
+<div style="margin-left:1.5em">
+  <ol start="28">
+    <li>Aazhang, B., Abler, R. T., Allebach, J. P., Bost, L. F., Cavallaro, J. R., Chong, E. K. P., Coyle,
+E. J., Cullers, J. B. S., Dennis, S. M., Dong, Y., Enjeti, P. N., Filippas, A. V., Froyd, J. E.,
+Garmire, D., George, J., Gilchrist, B. E., Hohner, G. S., Hughes, W. L., Johnson, A., Kim, C.,
+Kim, H., Klenke, R. H., Lagoudas, M. Z., Llewellyn, D. C., Lu, Y., Lybarger, K. J., Marshall, S.,
+Muralidharan, S., Ohta, A. T., Ortega, F. R., Riskin, E. A., Rizzo, D. M., Ryder, C. R., Shiroma,
+W. A., Siller, T. J., Sonnenberg-Klein, J., Sadjadi, S. M., Strachan, S. M., Taheri, M., Woods, G.
+L., Zoltowski, C. B., Fabien, B. C., Johnson, P., Collins, R., and Murray, P. â€œVertically Integrated
+Projects (VIP) Programs: Multidisciplinary Projects with Homes in Any Disciplineâ€ In <i>2017 ASEE
+Annual Conference &amp; Exposition, Columbus, Ohio. June, 2017.</i> <a href="https://peer.asee.org/29103">https://peer.asee.org/29103</a></li>
+  </ol>
+</div>
+<h3 style="font-size: large;margin-top:0.2em">Books</h3>
+<div style="margin-left:1.5em">
+  <ol start="29">
+    <li><b>Ortega, F.</b>, Rishe, N., and Barreto, A.,<i> 3D Multimodal interaction: With an Input Perspective,</i> CRC Press/AK Peters book. New York, NY. 2018.</li><br>
+    <li><b>Ortega, F.</b>, Rishe, N., and Barreto, A.,<i> Multi-Touch: Gesture Recognition, Elicitation, and More,</i> CRC Press/AK Peters book. New York, NY. 2018.</li><br>
+    <li><b>Ortega, F.</b>  Abyarjoo, F., Barreto, A., Rishe, N., and Adjouadi, M.,<i> Interaction design for 3D user interfaces: the world of modern input devices for research, applications, and game development.</i> CRC Press/AK Peters, New York, NY, 2016.</li><br>
+  </ol>
+</div>
+<h3 style="font-size: large;margin-top:0.2em">Book Chapters</h3>
+<div style="margin-left:1.5em">
+  <ol start="32">
+    <li>Hernandez, H., <b>Ortega, F.</b>, â€œReducing Video Game Creation Effort with Eberos GML2D.â€ Chapter in Game Development Tools Books edited by Marwan Y. Ansari. AK Peters/CRC Press. New York, NY, 2011.</li>
+  </ol>
+</div>
+<h3 style="font-size: large;margin-top:0.2em">Non-refereed Papers</h3>
+<div style="margin-left:1.5em">
+  <ol start="33">
+    <li><b>Ortega, F.</b>, Barreto, A., Rishe, N., and Adjouadi, M., â€œTowards 3D Data Environments Using Multi-Touch Screens.â€ In <i>ACHI 2012: The Fifth International Conference on Advances in Computer-Human Interactions</i>, pp. 118â€“121, 2012.</li><br>
+    <li><b>Ortega, F.</b>, Barreto, A., Rishe, N., Adjoudi, M., and Abyarjoo, F., â€œGyroTouch: Complementing the Multi-Touch Display.â€ In <i>ACM Richard Tapia Celebration of Diversity in Computing</i>, 2014.</li><br>
+    <li>Cofino, J., Barreto, A., Abyarjoo, F., and <b>Ortega, F.</b>, â€œB.A.S.S. Blind-Assistive Spatialized Screen-reading.â€ In <i>ACM Richard Tapia Celebration of Diversity in Computing,</i> 2014</li><br>
+  </ol>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">patents &amp; applications</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ol type="">
+    <li>Barreto, A., O-Larnnithipong, N., <b>Ortega, F.</b>, and Rishe, N., â€œRoundtable VRT.â€ Disclosed to
+    FIU, January, 2017. Current Status: Approved by FIU for application submission.</li><br>
+    <li><b>Ortega, F.</b>, Rishe, N., and Barreto, A., â€œMagicMotion.â€ Disclosed to FIU, May, 2016. Current
+    Status: Approved by FIU for application submission.</li><br>
+    <li><b>Ortega, F.</b>, Rishe, N., and Barreto, A., â€œGesture Discernment and Processing System.â€ US Utility
+    Patent filed November 28th, 2014, USPS Application Number 20160091977, publication date March
+    31st, 2016, pending.</li><br>
+</ol></div>
+<h2 style="font-variant: small-caps; margin-bottom:0">talks</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ol type="1">
+    <li>Ortega, F., â€œSmart Learning Desk: Towards an Interactive Classroom.â€ In <i>IEEE Virtual Reality 2016 Workshop on K-12 Embodied Learning through Virtual &amp; Augmented Reality,</i> Greenville, SC, March 19, 2016.</li><br>
+    <li>Ortega, F., â€œPostureMonitor: Real-Time IMU Wearable Technology to Foster Poise and Health.â€ In <i>HCI International 2015</i>. Los Angeles, CA, August 2015.</li><br>
+    <li>Ortega, F., â€œTAMGeF: Touch-midAir-Motion Framework for Spatial Input.â€ In <i>ACM Symposium
+    on Spatial User Interaction</i>, (fast forward). Los Angeles, CA, August 2015.</li><br>
+    <li>Ortega, F., â€œGyroTouch: Wrist Gyroscope with a Multi-Touch Display.â€ In <i>HCI International 2015</i>, Los Angeles, CA, August 2015.</li><br>
+    <li>Ortega, F., â€œTowards 3D navigation Using Multi-Touch Displays.â€ In <i>University of Florida (Computer Science)</i>. Invited by Dr. Lisa Anthony. Gainesville, FL, 2015.</li><br>
+    <li>Ortega, F., â€œPeNTa: Formal Modeling for Multi-Touch Systems Using Petri Nets.â€ In <i>HCI International 2014</i>. Crete, Greece, June 2014.</li><br>
+    <li>Ortega, F., â€œTowards 3D Navigation using Multi-Touch.â€ In <i>McKnight Yearly Fellowship Meeting</i>, Tampa, FL, 2014.</li><br>
+    <li>Ortega, F., â€œFeature Extraction for Multi-Touch.â€ In <i>McKnight Fellowship</i> at FIU, Miami, FL, January 23rd, 2014.</li><br>
+    <li>Ortega, F., â€œ3D Navigation with Commodity Devices and the Formalization of Multi-Touch Lan-
+    guage.â€ In <i>University of Leeds</i>, Colloquium Friday Series. Invited by Dr. Roy Ruddle. Leeds, England, October 18, 2013.</li><br>
+    <li>Ortega, F., Poster Presentation. â€œExploring Modeling Language for Multi-Touch Systems Using
+    Petri Nets.â€ In <i>ACM Interactive Tabletop and Surfaces</i> (ITS â€™13), St. Andrew, Scotland. 2013.</li><br>
+    <li>Ortega, F., Poster Presentation and Fast-Forward, â€œAugmenting Multi-Touch with Commodity De-
+    vices.â€ In <i>CM Symposium on Spatial User Interaction</i> (SUI â€™13), Los Angeles, CA, 2013</li><br>
+    <li>Ortega, F., â€œLooking Ahead: A Case for 3D User Interfaces.â€ Guest Speaker for Florida International University, Software Engineering Course, Miami, FL, Mar. 27th, 2012.</li><br>
+    <li>Ortega, F., Poster Presentation and Fast Forward, â€œPoster: Real-Time Gesture Detection for Multi-Touch Devices.â€ In <i>IEEE 8th Symposium on 3D User Interfaces</i> (3DUI â€™13), Orlando, FL, Mar. 16th, 2013.</li><br>
+    <li>Ortega, F., â€œNatural User Interfaces in 3D Navigation.â€ Guest Speaker Florida International University for Computer Graphics, Miami, FL., Feb. 26th, 2012.</li><br>
+    <li>Ortega, F., â€œMotivating Young Minds: Computer Science and Human-Computer Interaction.â€ Guest
+    for Career Day at W.R Thomas Middle School, Miami, FL, 13001 SW 26 STREET MIAMI, FL
+    33175, May 2nd, 2012.</li><br>
+    <li>Ortega, F., â€œ3D Navigation via 2D Multi Touch Surfaces.â€ In <i>FIU CS PhD Student Seminars</i>, Miami, FL, Apr. 12th, 2012.</li><br>
+  </ol>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">professional activities</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ul>
+    <li>Co-Organizer Committee Member, <i>IEEE VR Second Workshop on K-12 Embodied Learning through Virtual &amp; Augmented Reality</i> (KELVAR â€™17), Los Angeles, CA, 2017.</li><br>
+    <li>Technical Program Committee Member, <i>ACM Symposium on Spatial User Interaction</i> (SUI â€™17), Brighton, UK, 2017.</li><br>
+    <li>Publicity Co-chair, <i>ACM Symposium on Spatial User Interaction</i> (SUI â€™17), Brighton, UK, 2017.</li><br>
+    <li>Technical Program Committee Member, <i>ACM Symposium on 3D User Interfaces</i> (3DUI â€™17), Los Angeles, CA, 2017.</li><br>
+    <li>Publicity Co-chair, <i>ACM Symposium on 3D User Interfaces</i> (3DUI â€™17), Los Angeles, CA, 2017.</li><br>
+    <li>Technical Program Committee Member, <i>ACM Symposium on Spatial User Interaction</i> (SUI â€™16), Tokyo, Japan, 2016.</li><br>
+    <li>Publicity Co-chair, <i>ACM Symposium on Spatial User Interaction</i> (SUI â€™16), Tokyo, Japan, 2016.</li><br>
+  </ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">service</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ul>
+    <li>Primary reviewer for <i>ACM Symposium on 3D User Interfaces</i> (3DUI â€™17).</li><br>
+    <li>Primary reviewer for <i>ACM Symposium on Spatial User Interaction</i> (SUI â€™16).</li><br>
+    <li>Reviewer for <i>ACM Symposium on Spatial User Interaction</i> (SUI â€™16).</li><br>
+    <li>Reviewer for <i>ACM Richard Tapia Celebration of Diversity in Computing,</i> 2015-2017</li><br>
+    <li>Reviewer for <i>IEEE Sensors Journal,</i> 2014-2016.</li><br>
+    <li>Reviewer for <i>IEEE Journal of Biomedical and Health Informatics,</i> 2014.</li><br>
+  </ul>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">languages</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:2.4em">
+  <p>Proficient in English and Spanish.</p>
+</div>
+<h2 style="font-variant: small-caps; margin-bottom:0">references</h2>
+<hr style="margin-top:0; margin-bottom:0.5em">
+<div style="margin-left:1.5em">
+  <ul>
+    <li>Dr. Armando Barreto, Professor, Dept. of Electrical and Computer Engineering. 10555 W. Flagler St., EC-3981, Miami, FL. 33174. Phone: (305) 348-3711 â€“ email: barretoa@fiu.edu</li><br>
+    <li>Dr. Naphtali D. Rishe, Professor, School of Computing and Information Sciences. 11200 SW 8th St, ECS-243, Miami, FL. 33199. (305) 348-1706 â€“ email: ndr@acm.org </li><br>
+    <li>Dr. Peter Clarke, Associate Professor, School of Computing and Information Sciences. 11200 SW 8th St, ECS-212, Miami, FL. 33199. Phone: (305) 348-2440 â€“ email: clarkep@cs.fiu.edu</li><br>
+  </ul>
+</div>
+
+<h5>PDF version: <a href="http://openhid.com/fortega/cv.pdf">http://openhid.com/fortega/cv.pdf</a></h5>
+      </div>
+      <!--<div class="md-sidebar-toc"></div>
+      <a id="sidebar-toc-btn">â‰¡</a>-->
+    
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </body></html>
