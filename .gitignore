@@ -40,3 +40,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Ignore _reference folder
+/_reference
+/_reference/*
