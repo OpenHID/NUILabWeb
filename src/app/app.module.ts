@@ -5,14 +5,24 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule }     from './app-routing.module';
 
 // Site Components
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent }           from './app.component';
+import { AboutComponent }         from './about/about.component';
+import { ContactComponent }       from './contact/contact.component';
+import { HomeComponent }          from './home/home.component';
+import { ProjectsComponent }      from './projects/projects.component';
+import { PublicationsComponent }  from './publications/publications.component';
+import { ResourcesComponent }     from './resources/resources.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    AboutComponent,
+    ContactComponent,
+    HomeComponent,
+    ProjectsComponent,
+    PublicationsComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
