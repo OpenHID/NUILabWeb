@@ -27,3 +27,23 @@ li a.active {
     color: white;
     background-color: #4CAF50;
 }
+
+.footer {
+    background: linear-gradient(rgba(34, 34, 34, 0.75) 0%, rgba(34, 34, 34, 0) 25%) #081e3f;
+    padding: 3em 1.618em;
+    width: 100%;
+    text-align: center; }
+
+.footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 auto 1.5em;
+    width: 12em; 
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: auto;
+    max-width: 35em; 
+}
