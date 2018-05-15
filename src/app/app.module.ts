@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 // Routing Module to redirect pages
 import { AppRoutingModule }     from './app-routing.module';
@@ -14,6 +15,8 @@ import { PublicationsComponent }  from './publications/publications.component';
 import { ResourcesComponent }     from './resources/resources.component';
 
 
+import { PublicationService } from './publications/publication.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,9 +29,10 @@ import { ResourcesComponent }     from './resources/resources.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [PublicationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

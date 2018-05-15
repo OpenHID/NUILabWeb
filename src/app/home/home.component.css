@@ -27,3 +27,25 @@ body, html {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+.fullscreen-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%); }
+
+.openhid-logo {
+    display: block;
+    margin: 32px 0 16px 0;
+    min-width: 240px;
+    min-height: 200px;
+    z-index: 10;
+    background: url("/assets/images/general/openhid-logo.png") no-repeat scroll center center/contain; }
+    
+.spin {
+    animation: spin 2.5s ease 0s forwards; }
