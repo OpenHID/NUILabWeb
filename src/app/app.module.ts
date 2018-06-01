@@ -17,6 +17,12 @@ import { ResourcesComponent }     from './resources/resources.component';
 
 import { PublicationService } from './publications/publication.service';
 
+//Global variables
+import { Globals } from './globals';
+
+// Google Maps API
+import {AgmCoreModule} from "@agm/core"
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +36,15 @@ import { PublicationService } from './publications/publication.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: ' AIzaSyDZAsRcQHusi9gsviGBonQeststp3PQgDc '
+    })
   ],
-  providers: [PublicationService],
+  providers: [
+    PublicationService, 
+    Globals
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

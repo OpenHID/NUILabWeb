@@ -3,24 +3,26 @@
     <h1 style="text-align: center;">Publications</h1>
     <div class="table">
         <div *ngIf="!publications.RefeeredJournals" class="row">
-            <div class="col-mid-12">
+            <div class="col-md-12">
                 <!-- Start Refeered Journals -->
-                <h3>Refereed Journals</h3>
+                <div class="row">
+                    <div class="com-md-12"><h3>Refereed Journals</h3></div>
+                </div>
                 
                 <div *ngFor="let pub of publications.RefereedJournals" class="row">
-                    <div class="col-mid-12">
+                    <div class="col-md-12 pub">
                         <div class="row">
-                            <div class="col-mid-12">
-                                <span [innerHTML]="pub.name"></span>
+                           <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
                             </div>
                         </div>
                         <div class="row">
-                            <div *ngIf="pub.links" class="col-mid-4">
+                            <div *ngIf="pub.links" class="col-md-4">
                                 <span *ngFor="let link of pub.links">
-                                    <a href="link.url">{{link.from}}</a>
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
                                 </span>
                             </div>
-                            <div class="col-mid-8">
+                            <div class="col-md-8">
                                 <!-- empty div -->
                             </div>
                         </div>
@@ -31,24 +33,26 @@
         </div>
 
         <div *ngIf="publications.RefereedConferences" class="row">
-            <div class="col-mid-12">
-                <!-- Refereed Conferences -->
-                <h3>Refereed Conferences</h3>
-                
+            <div class="col-md-12">
+                <!-- Start Refereed Conferences -->
+                <div class="row">
+                    <div class="com-md-12"><h3>Refereed Conferences</h3></div>
+                </div>
+                                
                 <div *ngFor="let pub of publications.RefereedConferences" class="row">
-                    <div class="col-mid-12">
+                    <div class="col-md-12 pub">
                         <div class="row">
-                            <div class="col-mid-12">
-                                <span [innerHTML]="pub.name"></span>
+                            <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
                             </div>
                         </div>
                         <div class="row">
-                            <div *ngIf="pub.links" class="col-mid-4">
+                            <div *ngIf="pub.links" class="col-md-4">
                                 <span *ngFor="let link of pub.links">
-                                    <a href="link.url">{{link.from}}</a>
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
                                 </span>
                             </div>
-                            <div class="col-mid-8">
+                            <div class="col-md-8">
                                 <!-- empty div -->
                             </div>
                         </div>
@@ -58,14 +62,145 @@
             </div>
         </div>
         
-        
-        Workshop and Poster Refereed Papers
-        Other Referred Papers
-        Books
-        Book Chapters
-        Non-refereed Papers
-        <div class="row">
-
+        <div *ngIf="publications.Workshop" class="row">
+            <div class="col-md-12">
+                <!-- Start Workshop and Poster -->
+                <h3>Workshop and Poster Refereed Papers</h3>
+                
+                <div *ngFor="let pub of publications.Workshop" class="row">
+                    <div class="col-md-12 pub">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div *ngIf="pub.links" class="col-md-4">
+                                <span *ngFor="let link of pub.links">
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
+                                </span>
+                            </div>
+                            <div class="col-md-8">
+                                <!-- empty div -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Workshop and Poster -->
+            </div>
         </div>
+
+        <div *ngIf="publications.Other" class="row">
+            <div class="col-md-12">
+                <!-- Start Other Referred Papers -->
+                <h3>Other Referred Papers</h3>
+                
+                <div *ngFor="let pub of publications.Other" class="row">
+                    <div class="col-md-12 pub">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div *ngIf="pub.links" class="col-md-4">
+                                <span *ngFor="let link of pub.links">
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
+                                </span>
+                            </div>
+                            <div class="col-md-8">
+                                <!-- empty div -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Other Referred Papers -->
+            </div>
+        </div>
+
+        <div *ngIf="publications.Books" class="row">
+            <div class="col-md-12">
+                <!-- Start Books -->
+                <h3>Books</h3>
+                
+                <div *ngFor="let pub of publications.Books" class="row">
+                    <div class="col-md-12 pub">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div *ngIf="pub.links" class="col-md-4">
+                                <span *ngFor="let link of pub.links">
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
+                                </span>
+                            </div>
+                            <div class="col-md-8">
+                                <!-- empty div -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Books -->
+            </div>
+        </div>
+
+        <div *ngIf="publications.BookChapters" class="row">
+            <div class="col-md-12">
+                <!-- Start Book Chapters -->
+                <h3>Book Chapters</h3>
+                
+                <div *ngFor="let pub of publications.BookChapters" class="row">
+                    <div class="col-md-12 pub">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div *ngIf="pub.links" class="col-md-4">
+                                <span *ngFor="let link of pub.links">
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
+                                </span>
+                            </div>
+                            <div class="col-md-8">
+                                <!-- empty div -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Book Chapters -->
+            </div>
+        </div>
+
+        <div *ngIf="publications.NonRefeered" class="row">
+            <div class="col-md-12">
+                <!-- Start Non-refereed Papers -->
+                <h3>Non-refereed Papers</h3>
+                
+                <div *ngFor="let pub of publications.NonRefeered" class="row">
+                    <div class="col-md-12 pub">
+                        <div class="row">
+                            <div class="col-md-12">
+                                {{getCounter()}}.&nbsp;<span [innerHTML]="pub.name"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div *ngIf="pub.links" class="col-md-4">
+                                <span *ngFor="let link of pub.links">
+                                    [<a [attr.href]="link.url">{{link.from}}</a>]
+                                </span>
+                            </div>
+                            <div class="col-md-8">
+                                <!-- empty div -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Non-refereed Papers -->
+            </div>
+        </div>
+
     </div>
 </div>

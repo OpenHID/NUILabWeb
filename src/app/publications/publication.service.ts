@@ -28,9 +28,7 @@ export class PublicationService{
                   {
                     "name" : "<b>Ortega, F.<\/b>, Tarre, K., Rishe, N., and Barreto, A., \"3D Navigation for 6DOF Using Multi-Touch vs. GamePad\", under submission in International Journal of HumanComputer Studies, 2017.",
                     "links": 
-                    [
-                      {"from":"PDF", "url":"we"}
-                    ]
+                    []
                   },
                   {
                     "name" : "Cofino J., Barreto A., Abyarjoo F., and <b>Ortega, F.<\/b>, \"Sonically-Enhanced Tabular Screen-Reading\", Journal on Technology & Persons with Disabilities (JTPD),Vol. 2, pp. 46–57, 2014.",

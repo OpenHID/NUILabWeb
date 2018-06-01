@@ -109,6 +109,18 @@
       },
       "description": "Pablo Mueller is an undergraduate volunteer researching gesture recognition.",
       "resume": ""
+    },
+    {
+      "name": "Santiago Bolivar",
+      "email": "sboli001@fiu.edu",
+      "job": "Undergraduate Research Assistant",
+      "img": "assets/images/people/openhid-logo.png",
+      "website": {
+        "name": "",
+        "url": ""
+      },
+      "description": "Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuin the major.",
+      "resume": ""
     }
   ],
   "formerWorkers": [
