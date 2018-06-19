@@ -7,7 +7,7 @@ import { Globals } from './globals';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private _globals: Globals){}
+  constructor(public _globals: Globals){}
   
   title = 'app';
   
