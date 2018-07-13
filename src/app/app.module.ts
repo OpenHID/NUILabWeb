@@ -16,13 +16,15 @@ import { ResourcesComponent }     from './resources/resources.component';
 import { MenubarComponent }       from './other/menubar.component';
 import { FootbarComponent }       from './other/footbar.component';
 
+import { EmployeeService } from './about/employee.service';
 import { PublicationService } from './publications/publication.service';
 
 //Global variables
 import { Globals } from './globals';
 
 // Google Maps API
-import {AgmCoreModule} from "@agm/core"
+import {AgmCoreModule} from "@agm/core";
+
 
 
 @NgModule({
@@ -46,6 +48,7 @@ import {AgmCoreModule} from "@agm/core"
     })
   ],
   providers: [
+    EmployeeService,
     PublicationService, 
     Globals
   ],
