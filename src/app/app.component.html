@@ -1,17 +1,8 @@
-<!-- NAVBAR STARTS -->
-<div class="container">
-  <ul>
-    <li><a [routerLinkActive]="['active']" [routerLink]="['/Home']">Home</a></li>
-    <li><a [routerLinkActive]="['active']" [routerLink]="['/About']">About Us</a></li>
-    <li><a [routerLinkActive]="['active']" [routerLink]="['/Projects']">Projects</a></li>
-    <li><a [routerLinkActive]="['active']" [routerLink]="['/Contact']">Contact</a></li>
-    <li><a [routerLinkActive]="['active']" [routerLink]="['/Publications']">Publications</a></li>
-    <li><a href="http://3dinputbook.com/">Books</a></li>
-    <li><a [routerLinkActive]="['active']" [routerLink]="['/Resources']">Resources</a></li>
-    <li><a href="https://users.cs.fiu.edu/~fortega/">Teaching</a></li>
-  </ul>
+<!-- START FOOTER -->
+<div>
+  <menu-bar></menu-bar>
 </div>
-<!-- NAVBAR ENDS -->
+<!-- END FOOTER -->
 
 <!--START EACH PAGE CONTENT -->
 <router-outlet></router-outlet>
@@ -19,13 +10,6 @@
 
 <!-- START FOOTER -->
 <div>
-    <footer class="footer"><a href="http://www.cs.colostate.edu/cstop/"><img src="/assets/images/general/CSU_Logo.png" alt="Logo image" style="width: 240px"></a>
-      <hr>
-      <p>The {{_globals.LabShort }} lab is a member of the <br><a href="http://www.cs.colostate.edu/cstop/">{{_globals.UniversityShort }}'s College of Computing Sciences</a></p>
-    </footer>
+  <footbar></footbar>
 </div>
 <!-- END FOOTER -->
-
-
-
-

@@ -13,7 +13,8 @@ import { HomeComponent }          from './home/home.component';
 import { ProjectsComponent }      from './projects/projects.component';
 import { PublicationsComponent }  from './publications/publications.component';
 import { ResourcesComponent }     from './resources/resources.component';
-
+import { MenubarComponent }       from './other/menubar.component';
+import { FootbarComponent }       from './other/footbar.component';
 
 import { PublicationService } from './publications/publication.service';
 
@@ -23,6 +24,7 @@ import { Globals } from './globals';
 // Google Maps API
 import {AgmCoreModule} from "@agm/core"
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,9 @@ import {AgmCoreModule} from "@agm/core"
     HomeComponent,
     ProjectsComponent,
     PublicationsComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    MenubarComponent,
+    FootbarComponent
   ],
   imports: [
     BrowserModule,
