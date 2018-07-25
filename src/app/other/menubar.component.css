@@ -49,3 +49,9 @@ li a.active {
 {
     background-color: darkgreen;
 }
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

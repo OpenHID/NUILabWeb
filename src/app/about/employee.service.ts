@@ -30,36 +30,27 @@ export class EmployeeService {
                       "cv":"http://openhid.com/fortega/cv.pdf",
                       "website":"website",
                       "image":"assets/images/people/francisco-ortega.jpg",
-                      "description":"Dr. Francisco R. Ortega is an Assistant Professor at Colorado State University. Dr. Ortega earned his Ph.D. in Computer Science (CS) in the field of Human-Computer Interaction (HCI) and 3D User Interfaces (3DUI) from Florida International University (FIU). He also hold a position of Post-Doc and Visiting Assistant Professor at FIU between February 2015 to July 2018. Broadly speaking, his research has focused on gesture interaction, which includes gesture recognition and elicitation. His main research area focuses on improving user interaction by (a) eliciting (hand and full-body) gesture sets by user elicitation, and (b) developing interactive gesture-recognition algorithms. His secondary research aims to discover how to increase interest for CS in non-CS entry-level college students via virtual and augmented reality games. His research has resulted in multiple peer-reviewed publications in venues such as ACM ISS, ACM SUI, and IEEE 3DUI, among others. He is the first-author of Interaction Design for 3D User Interfaces: The World of Modern Input Devices for Research, Applications, and Game Development book by CRC Press. Dr. Ortega serves as Vertically Integrated Projects coordinator that promotes applied research for undergraduate students across disciplines. <br>Dr. Ortega is committed to teaching and integrating research in the classroom. He has taught multiple courses including CS capstone, Programming II (Java), Programming III (C), Operating Systems, Principles of Relational Database Management Systems (graduate), Network Management and Control Standards (graduate), Net-Centric (using Python), Web Application Programming, Website Management, and Construction, Windows Programming (C#), Digital Forensics, Advanced Digital Forensics (graduate), Advanced Ethical Hacking (graduate), and Practical Applied Security (graduate)."
+                      "description":"<p>Dr. Francisco R. Ortega is an Assistant Professor at Colorado State University. Dr. Ortega earned his Ph.D. in Computer Science (CS) in the field of Human-Computer Interaction (HCI) and 3D User Interfaces (3DUI) from Florida International University (FIU). He also hold a position of Post-Doc and Visiting Assistant Professor at FIU between February 2015 to July 2018. Broadly speaking, his research has focused on gesture interaction, which includes gesture recognition and elicitation. His main research area focuses on improving user interaction by (a) eliciting (hand and full-body) gesture sets by user elicitation, and (b) developing interactive gesture-recognition algorithms. His secondary research aims to discover how to increase interest for CS in non-CS entry-level college students via virtual and augmented reality games. His research has resulted in multiple peer-reviewed publications in venues such as ACM ISS, ACM SUI, and IEEE 3DUI, among others. He is the first-author of Interaction Design for 3D User Interfaces: The World of Modern Input Devices for Research, Applications, and Game Development book by CRC Press. Dr. Ortega serves as Vertically Integrated Projects coordinator that promotes applied research for undergraduate students across disciplines.<\/p> <p>Dr. Ortega is committed to teaching and integrating research in the classroom. He has taught multiple courses including CS capstone, Programming II (Java), Programming III (C), Operating Systems, Principles of Relational Database Management Systems (graduate), Network Management and Control Standards (graduate), Net-Centric (using Python), Web Application Programming, Website Management, and Construction, Windows Programming (C#), Digital Forensics, Advanced Digital Forensics (graduate), Advanced Ethical Hacking (graduate), and Practical Applied Security (graduate).<\/p>"
                     }
                   ]
                 },
                 "Current":
                 {
                   "PHD":
-                  [
                     {
-                      "name":"Katherine Tarre",
-                      "education":"Ph. D.",
-                      "major":"Computer Science",
-                      "position":"Graduate Research Assistant",
-                      "email":"ktarr007@fiu.edu",
-                      "website":"website",
-                      "image":"assets/images/people/katherine-tarre.jpg",
-                      "description":"Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving. Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving."
-                    }
-                  ],
+                     
+                    },
                   "MDS":
                   [
                     {
                       "name":"Fernando de Zayas",
-                      "education":"B.S.,M.A.",
+                      "education":"B.S.,M.S.",
                       "major":"Computer Science",
                       "position":"Graduate Research Assistant",
-                      "email":"rbalc001@fiu.edu",
+                      "email":"TBA",
                       "website":"website",
-                      "image":"assets/images/people/ruben-balcazar.jpg",
-                      "description":"Ruben Balcazar was a graduate research assistant for the OpenHID Lab. His contributions include Unity plugins for OpenHID compliant hardware."
+                      "image":"assets/images/people/openhid-logo.png",
+                      "description":"Graduate research assistant."
                     }
                   ],
                   "BS":
@@ -171,7 +162,7 @@ export class EmployeeService {
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/arelys-alvarez.jpg",
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
                     {
@@ -223,8 +214,18 @@ export class EmployeeService {
                   "MDS":
                   [
                     {
+                      "name":"Katherine Tarre",
+                      "education":"B.S., M.S.",
+                      "major":"Statistics",
+                      "position":"Graduate Research Assistant",
+                      "email":"ktarr007@fiu.edu",
+                      "website":"website",
+                      "image":"assets/images/people/katherine-tarre.jpg",
+                      "description":"Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving. Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving."
+                    },
+                    {
                       "name":"Ruben Balcazar",
-                      "education":"B.S.,M.A.",
+                      "education":"B.S.,M.S.",
                       "major":"Biology, Computer Science",
                       "position":"Engineer at Ultimate Software (Former Graduate Research Assistant)",
                       "email":"rbalc001@fiu.edu",
@@ -234,7 +235,7 @@ export class EmployeeService {
                     },
                     {
                       "name":"Jules Calella",
-                      "education":"B.S.,M.A.",
+                      "education":"B.S.,M.S.",
                       "major":"Electrical Engineer, Computer Science",
                       "position":"Engineer at Ultimate Software (Former Graduate Research Assistant)",
                       "email":"jcale004@fiu.edu",
@@ -272,7 +273,7 @@ export class EmployeeService {
                       "position":"Former Undergraduate Research Assistant",
                       "email":"lborg019@fiu.edu",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/mathew-kress.jpg",
                       "description":"Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens."
                     },
                     {

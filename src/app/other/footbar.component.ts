@@ -7,5 +7,5 @@ import { Globals } from '../globals';
     styleUrls: ['./footbar.component.css']
 })
 export class FootbarComponent {
-    constructor(private _globals: Globals) { }
+    constructor(public _globals: Globals) { }
 }

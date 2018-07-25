@@ -11,37 +11,23 @@ export class AboutComponent  {
     employees;
     faculty;
     current;
-    former;
+    oldStudents;
     constructor( private _globals: Globals, private _EmpService:EmployeeService) { 
         this.employees = _EmpService.getEmployees();
         if (this.employees != null)
         {
-            if(this.employees.faculty != null)
+            if(this.employees.Faculty != null)
             {
                 this.faculty = this.employees.Faculty;
             }
-            if(this.employees.current != null)
+            if(this.employees.Current != null)
             {
                 this.current = this.employees.Current;
             }
-            if(this.employees.former != null)
+            if(this.employees.Former != null)
             {
-                this.former = this.employees.Former;
+                this.oldStudents = this.employees.Former;
             }
         }
-
-        console.log(this.employees);
-
-        this.faculty = this.employees.Faculty;
-        this.current = this.employees.Current;
-        this.former = this.employees.Former;
-
-        console.log("Faculty");
-        console.log(this.faculty);
-        console.log("Current");
-        console.log(this.current);
-        console.log("Former");
-        console.log(this.former);
-
     }
 }

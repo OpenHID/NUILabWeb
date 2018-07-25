@@ -1,9 +1,8 @@
 <div class="container">
     <!-- Header Group photo -->
     <div style="background: url('/assets/images/people/header_photo.jpg'); width: 100%; height: 280px; background-size: cover; background-position: 50% 25%;"></div>
-    
+   
     <div class="table">
-        <!-- WHO WE ARE DIV -->    
         <div class="row" style="padding:16px;">
             <div class="col-md-4" style="text-align:center">
                 <img src="assets/images/general/map.svg" style="width: 70%; max-height: 240px;">
@@ -14,334 +13,270 @@
                 <p>We are a multi-disciplinary group, with our primary site at Colorado State University and with a still active site at Florida International University. We have included a diverse background of knowledge and origins. While CS-centric, former students have included majors, such as Statistics, Mathematics, Biology, Psychology, Engineering, and Architecture, among others. We have had members from multiple places, including USA, Cuba, Chile, Colombia, Jamaica, Dominican Republic, China, Brazil, and Venezuela, among others.</p>
             </div>
         </div>
-        <!-- Faculty title -->
-        <div class="row" style="height:70px">
-            <div class="col-md-12" style="text-align:center">
+    </div>
+</div>
+
+<!-- CONTENT USING JSON OBJ -->
+<div class="container">
+    <br><hr><br>
+</div>
+
+<!-- Faculty People -->
+<div *ngIf="faculty.PHD.length" class="container">
+    <div class="table">
+        <div class="row">
+            <div class="col-md-12 PeopleTitle">
                 <h2>Faculty</h2>
             </div>
         </div>
-        <!-- TODO Add people to database -->
-        <!-- TODO Add padding to images for better responsive -->
-        <!-- TODO add santiago Bolivar -->
-        <!-- Francisco Ortega CV -->
-        <!-- <div *ngFor="let boss of bosses" class="row" style="padding:20px;"> -->
-        <div class="row" style="padding:20px;">
+        
+        <div *ngFor="let person of faculty.PHD" class="row" style="padding:20px;">
             <div class="col-md-2" style="text-align:center;">
-                <img src="assets/images/people/francisco-ortega.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
+                <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
             </div>
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-10">
-                        <h3>Francisco R. Ortega, Ph. D.</h3>
-                        <h5>Visiting Assistant Professor &amp; Director of OpenHID Lab</h5>
-                        <p>fortega@cs.fiu.edu</p>
+                        <h3>{{person.name}}, {{person.education}}.</h3>
+                        <h5>{{person.position}}</h5>
+                        <p>{{person.email}}</p>
                     </div>
-                    <!-- TODO add resume link -->
+                    
                     <div class="col-md-2">
-                        <a href="http://openhid.com/fortega/cv.pdf"><h5>CV</h5></a>
+                        <a [href]="person.cv" target="NEW"><h5>CV</h5></a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Dr. Francisco R. Ortega is an Assistant Professor at Colorado State University. Dr. Ortega earned his Ph.D. in Computer Science (CS) in the field of Human-Computer Interaction (HCI) and 3D User Interfaces (3DUI) from Florida International University (FIU). He also hold a position of Post-Doc and Visiting Assistant Professor at FIU between February 2015 to July 2018.  Broadly speaking, his research has focused on gesture interaction, which includes gesture recognition and elicitation. His main research area focuses on improving user interaction by (a) eliciting (hand and full-body) gesture sets by user elicitation, and (b) developing interactive gesture-recognition algorithms. His secondary research aims to discover how to increase interest for CS in non-CS entry-level college students via virtual and augmented reality games. His research has resulted in multiple peer-reviewed publications in venues such as ACM ISS, ACM SUI, and IEEE 3DUI, among others. He is the first-author of Interaction Design for 3D User Interfaces: The World of Modern Input Devices for Research, Applications, and Game Development book by CRC Press. Dr. Ortega serves as Vertically Integrated Projects coordinator that promotes applied research for undergraduate students across disciplines.</p>
-                        <p>Dr. Ortega is committed to teaching and integrating research in the classroom. He has taught multiple courses including CS capstone, Programming II (Java), Programming III (C), Operating Systems, Principles of Relational Database Management Systems (graduate), Network Management and Control Standards (graduate), Net-Centric (using Python), Web Application Programming, Website Management, and Construction, Windows Programming (C&#x23;), Digital Forensics, Advanced Digital Forensics (graduate), Advanced Ethical Hacking (graduate), and Practical Applied Security (graduate).</p>
+                       <span [innerHTML]="person.description"> </span>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Francisco Ortega -->
-
-        <br>
-        <!-- Student title -->
-        <div class="row" style="height:70px">
-            <div class="col-md-12" style="text-align:center">
-                <h2>Students</h2>
-            </div>
-        </div>
-
-        <!-- Katherine Tarre CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/katherine-tarre.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Katherine Tarre</h3>
-                        <p>ktarr007@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Katherine Tarre -->
-
-        <!-- Seidan Jamides CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/seidan-jamides.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Seidan Jamides</h3>
-                        <p>sjami006@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Seidan Jamides is an undergraduate research assistant majoring Computer Science. He is currently performing research in gesture elicitation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Seidan Jamides -->
-
-        <!-- Cristina Villarroel CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/cristina-villarroel.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Cristina Villarroel</h3>
-                        <p>cvill141@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Cristina Villarroel is an undergraduate volunteer collaborating with OpenHID research.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Cristina Villarroel -->
-
-        <!-- Pablo Mueller CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/pablo-mueller.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Pablo Mueller</h3>
-                        <p>pmuel001@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Pablo Mueller is an undergraduate volunteer researching gesture recognition.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Pablo Mueller -->
-
-        <!-- Santiago Bolivar CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/openhid-logo.png" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Santiago Bolivar</h3>
-                        <p>sboli001@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuin the major.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Pablo Mueller -->
-        <br>
-        <!-- Former Student title -->
-        <div class="row" style="height:70px">
-            <div class="col-md-12" style="text-align:center">
-                <h2>Former Students</h2>
-            </div>
-        </div>
-
-        <!-- Alain Galvan CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/alain-galvan.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Alain Galvan</h3>
-                        <h5>Engineer at Marmoset Toolbag</h5>
-                        <p>agalv023@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Alain Galvan was a researcher focused on graphics programming, procedurally generated environments, and making tools for artists/musicians. He's been awarded in MLH Hackathons, Newgrounds, Codepen, among other venues. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Alain Galvan -->
-
-        <!-- Jules Calella CV -->
-        <div class="row" style="min-height: 160px; padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/jules-calella.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Jules Calella</h3>
-                        <p>jcale004@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Jules Calella is a graduate research assistant. He has a primary interest is in electronics, with a focus in communications and digital electronics.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Jules Calella -->
-
-        <!-- Lukas Borges CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/lukas-borges.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Lukas Borges</h3>
-                        <p>lborg019@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Lukas is an undergraduate focused on Augmented Reality and Game Development in Unity.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Lukas Borges -->
-
-        <!-- Mathew Kress CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/openhid-logo.png" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Mathew Kress</h3>
-                        <p>mkres000@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Mathew Kress -->
-
-        <!-- Jason Lee Thomas CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/jason-lee-thomas.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Jason Lee Thomas</h3>
-                        <h5>Senior Engineer at Citrix</h5>
-                        <p>jasthoma@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Jason Lee Thomas was an undergraduate research assistant, who focused on low end C++ programming for the OpenHID Framework (TAMGeF).</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Jason Lee Thomas -->
-
-        <!-- Ruben Balcazar CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/ruben-balcazar.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Ruben Balcazar</h3>
-                        <h5>Engineer at Ultimate Software</h5>
-                        <p>rbalc001@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Ruben Balcazar was a graduate research assistant for the OpenHID Lab. His contributions include Unity plugins for OpenHID compliant hardware.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Ruben Balcazar -->
-
-        <!-- Jonathan Bernal CV -->
-        <div class="row" style="min-height: 160px;padding:20px;">
-            <div class="col-md-2" style="text-align:center">
-                <img src="assets/images/people/jonathan-bernal.jpg" style="width: 70%; max-height: 200px; max-width: 200px;">
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Jonathan Bernal</h3>
-                        <h5>Former Undergraduate Gesture Research Assistant</h5>
-                        <p>jbern102@fiu.edu</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Jonathan F. Bernal was an undergraduate research assistant, currently conducting research on Human-computer Multimodal Interaction and Augmented and Mixed Reality. Jonathan was also part of the ARCH program of the FIU Honors College. His major hobbies are biking and drawing.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Jonathan Bernal -->
 
     </div>
 </div>
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <img src="assets/images/people/francisco-ortega.jpg">
-                <br>
-                <div style="align-items: center;">
-                <h4>Dr. Francisco Ortega</h4>
-                </div>
-                <div id="demo" class="collapse">
-                        <p class="title">Dr. Francisco R. Ortega (), Visiting Assistant Professor, received his Ph.D. in Computer Science from Florida International University (FIU) in 2014, co-advised by Dr. Naphtali Rishe and Dr. Armando Barreto. He received outstanding graduate student 2014 from Computer Science. His dissertation was one of five nominated for best dissertation award for the college of engineering. Dr. Ortega received his bachelor’s degree in Computer Science, cum laude, in December 2008 from FIU and a master’s degree in Computer Science from FIU in December 2009. Dr. Ortega has over 17 years of experience in software development and systems integration. His area of expertise are in 3D User Interfaces, Input Interfaces, Human-Computer Interaction, 3D navigation, input modeling, multi-threaded programming for 3D User Interfaces, and framework development, among others. Dr. Ortega has 22 publications, with many of them as first author. He is the also the first author of the book Interaction Design for 3D User Interfaces to be published by CRC Press/Taylor and Francis Group in January, 2016.</p>
-                </div> 
-                <button data-toggle="collapse" data-target="#demo">Information</button>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
+<div class="container">
+    <br><hr><br>
+</div>
+<!-- All current Students -->
+
+<div class="container">
+    <div class="table">
+        <div class="row">
+            <div class="col-md-12 PeopleTitle">
+                <h2>Current Assistants and Volunteers</h2>
             </div>
         </div>
+        
+        <!-- Current PHD Students -->
+        <div *ngIf="current.PHD.length">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>PH.D. Students</h3>
+                </div>
+            </div>
+            <div *ngFor="let person of current.PHD" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Current Master Students -->
+        <div *ngIf="current.MDS.length">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Master Students</h3>
+                </div>
+            </div>
+            <div *ngFor="let person of current.MDS" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Bachelor Students -->
+        <div *ngIf="current.BS.length">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Bachelor Students</h3>
+                </div>
+            </div>
+            <div *ngFor="let person of current.BS" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div> -->
+</div>
+
+<div class="container">
+    <br><hr><br>
+</div>
+<!-- All Former Students -->
+<div class="container">
+    <div class="table">
+        <div class="row">
+            <div class="col-md-12 PeopleTitle">
+                <h2>Former Assistants and Volunteers</h2>
+            </div>
+        </div>
+        
+        <!-- Current PHD Students -->
+        <div *ngIf="oldStudents.PHD.length">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>PH.D. Students</h3>
+                </div>
+            </div>
+            <div *ngFor="let person of oldStudents.PHD" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Current Master Students -->
+        <div *ngIf="oldStudents.MDS.length">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Master Students</h3>
+                </div>
+            </div>
+            <div *ngFor="let person of oldStudents.MDS" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Bachelor Students -->
+        <div *ngIf="oldStudents.BS.length">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Bachelor Students</h3>
+                </div>
+            </div>
+            <div *ngFor="let person of oldStudents.BS" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

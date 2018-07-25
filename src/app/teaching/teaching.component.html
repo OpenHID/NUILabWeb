@@ -1,0 +1,71 @@
+<!-- Title container -->
+<br>
+<div class="container">
+    <h1 class="centerTitles">Classes</h1>
+</div>
+
+<!-- Classes Container -->
+<div class="container">
+    <div class="table">
+
+        <!-- Fall classes div -->
+        <div *ngIf="myClasses.Semesters.Fall2018.length">
+            <div class="row">
+                <div class="col-md 12">
+                    <h2>Fall 2018</h2>
+                </div>
+            </div>
+            
+            <!-- Classes Fall Div -->
+            <div *ngFor="let class of myClasses.Semesters.Fall2018" class="row">
+                <div class="col-md-1"></div>    
+                <div class="col-md-10">
+                    {{class.code}}-{{class.name}}
+                    <br>
+                    {{class.time}}
+                    <br>
+                    {{class.description}}
+                    <br>
+                    <span *ngIf="class.isLink">
+                        <a [attr.href]="class.link">{{class.code}} Website</a>
+                    </span>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <br><hr><br>
+        
+        <!-- Spring classes div -->
+        <div *ngIf="myClasses.Semesters.Spring2019.length">
+            <div class="row">
+                <div class="col-md 12">
+                    <h2>Spring 2019</h2>
+                </div>
+            </div>
+            
+            <!-- Classes Spring Div -->
+            <div *ngFor="let class of myClasses.Semesters.Spring2019" class="row">
+                <div class="col-md-1"></div>    
+                <div class="col-md-10">
+                    {{class.code}}-{{class.name}}
+                    <br>
+                    {{class.time}}
+                    <br>
+                    {{class.description}}
+                    <br>
+                    <span *ngIf="class.isLink">
+                        <a [attr.href]="class.link">{{class.code}} Website</a>
+                    </span>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br>
+<div class="container">
+    <h1 class="centerTitles">End of Classes</h1>
+</div>

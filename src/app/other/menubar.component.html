@@ -1,5 +1,5 @@
 <!-- NAVBAR STARTS -->
-<div class="container">
+<!-- <div class="container">
     <ul >
       <li class="HeaderLogoText">
         <a [routerLink]="['/Home']">
@@ -8,7 +8,7 @@
         </a>
       </li>
       <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-      <li><a alt="Home" [routerLinkActive]="['active']" [routerLink]="['/Home']">Home</a></li>
+      <li><a [routerLinkActive]="['active']" [routerLink]="['/Home']">Home</a></li>
       <li><a [routerLinkActive]="['active']" [routerLink]="['/About']">About Us</a></li>
       <li><a [routerLinkActive]="['active']" [routerLink]="['/Projects']">Projects</a></li>
       <li><a [routerLinkActive]="['active']" [routerLink]="['/Contact']">Contact</a></li>
@@ -17,5 +17,27 @@
       <li><a href="https://users.cs.fiu.edu/~fortega/">Teaching</a></li>
       <li><a href="http://3dinputbook.com/">Books</a></li>
     </ul>
-</div>
+</div> -->
   <!-- NAVBAR ENDS -->
+
+  <!-- NEW NAV BAR START -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" [routerLink]="['/Home']">NUI LAB</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/Home']">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/About']">About Us</a>
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/Projects']">Projects</a>
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/Publications']">Publications</a>
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/Contact']">Contact</a>
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/Resources']">Resources</a>
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/Teaching']">Teaching</a>
+        <a class="nav-item nav-link" href="http://3dinputbook.com/" target="NEW">Books</a>
+      </div>
+    </div>
+  </nav>
+  <!-- NEW NAV BAR END -->
+
