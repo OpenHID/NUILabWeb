@@ -3,6 +3,9 @@
 <div class="container">
     <h1 class="centerTitles">Classes</h1>
 </div>
+<div class="container">
+    <br><hr><br>
+</div>
 
 <!-- Classes Container -->
 <div class="container">
@@ -16,11 +19,13 @@
                 </div>
             </div>
             
+            <br><hr><br>
+
             <!-- Classes Fall Div -->
             <div *ngFor="let class of myClasses.Semesters.Fall2018" class="row">
                 <div class="col-md-1"></div>    
                 <div class="col-md-10">
-                    {{class.code}}-{{class.name}}
+                    <b class="classTitle">{{class.code}}:&nbsp;{{class.name}}</b>
                     <br>
                     {{class.time}}
                     <br>
@@ -43,12 +48,14 @@
                     <h2>Spring 2019</h2>
                 </div>
             </div>
+
+            <br><hr><br>
             
             <!-- Classes Spring Div -->
             <div *ngFor="let class of myClasses.Semesters.Spring2019" class="row">
                 <div class="col-md-1"></div>    
                 <div class="col-md-10">
-                    {{class.code}}-{{class.name}}
+                    <b class="classTitle">{{class.code}}:&nbsp;{{class.name}}</b>
                     <br>
                     {{class.time}}
                     <br>
