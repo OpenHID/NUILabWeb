@@ -47,6 +47,17 @@ body, html {
     z-index: 10;
     background: url("/assets/images/general/openhid-logo.png") no-repeat scroll center center/contain; }
     
+.fullscreen-video {
+    border: 1px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%); }
 
 .logoanimation {
     position: absolute;
@@ -60,3 +71,25 @@ body, html {
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.bannerParent{
+    position: absolute;
+    z-index: -10;
+    /* display: -webkit-flex; */
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.contentSite{
+    background-color: white;
+    padding: 10em;
+}
+
+.clearContent{
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}

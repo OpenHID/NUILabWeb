@@ -27,9 +27,9 @@
                 <div class="col-md-10">
                     <b class="classTitle">{{class.code}}:&nbsp;{{class.name}}</b>
                     <br>
-                    {{class.time}}
+                    <b>Time:</b>&nbsp;{{class.time}}
                     <br>
-                    {{class.description}}
+                    <b>Description:</b>&nbsp;{{class.description}}
                     <br>
                     <span *ngIf="class.isLink">
                         <a [attr.href]="class.link">{{class.code}} Website</a>
@@ -57,9 +57,9 @@
                 <div class="col-md-10">
                     <b class="classTitle">{{class.code}}:&nbsp;{{class.name}}</b>
                     <br>
-                    {{class.time}}
+                    <b>Time:</b>&nbsp;{{class.time}}
                     <br>
-                    {{class.description}}
+                    <b>Description:</b>&nbsp;{{class.description}}
                     <br>
                     <span *ngIf="class.isLink">
                         <a [attr.href]="class.link">{{class.code}} Website</a>
@@ -69,10 +69,4 @@
             </div>
         </div>
     </div>
-</div>
-
-
-<br>
-<div class="container">
-    <h1 class="centerTitles">End of Classes</h1>
 </div>
