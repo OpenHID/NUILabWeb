@@ -75,17 +75,12 @@ body, html {
 .bannerParent{
     position: absolute;
     z-index: -10;
-    /* display: -webkit-flex; */
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-align-content: center;
-    align-content: center;
+    background-color: steelblue;
 }
 
 .contentSite{
     background-color: white;
-    padding: 10em;
+    padding: 2em;
 }
 
 .clearContent{
