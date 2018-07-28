@@ -261,6 +261,17 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/jules-calella.jpg",
                       "description":"Jules Calella is a graduate research assistant. He has a primary interest is in electronics, with a focus in communications and digital electronics."
+                    },
+                    {
+                      "name":"Mathew Kress",
+                      "education":"B.S., M.S",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science, Computer Engineering",
+                      "position":"Former graduate Research Assistant",
+                      "email":"mkres001@fiu.edu",
+                      "website":"website",
+                      "image":"assets/images/people/mathew-kress.jpg",
+                      "description":"Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens."
                     }
                   ],
                   "BS":
@@ -286,17 +297,6 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/lukas-borges.jpg",
                       "description":"Lukas is an undergraduate focused on Augmented Reality and Game Development in Unity."
-                    },
-                    {
-                      "name":"Mathew Kress",
-                      "education":"B.S., M.S",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science, Computer Engineering",
-                      "position":"Former graduate Research Assistant",
-                      "email":"mkres001@fiu.edu",
-                      "website":"website",
-                      "image":"assets/images/people/mathew-kress.jpg",
-                      "description":"Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens."
                     },
                     {
                       "name":"Jason Lee Thomas",
