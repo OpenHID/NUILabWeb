@@ -266,9 +266,9 @@ export class EmployeeService {
                       "name":"Mathew Kress",
                       "education":"B.S., M.S",
                       "universtiy":"Florida International Universty",
-                      "major":"Computer Science, Computer Engineering",
+                      "major":"Software Engineering, Computer Engineering",
                       "position":"Former graduate Research Assistant",
-                      "email":"mkres001@fiu.edu",
+                      "email":"mkres006@fiu.edu",
                       "website":"website",
                       "image":"assets/images/people/mathew-kress.jpg",
                       "description":"Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens."
