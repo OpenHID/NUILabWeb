@@ -6,10 +6,10 @@ Front end website developed with Angular 5 on.
 
 You need to have at least.
 
-- NodeJS (Download from https://nodejs.org/en/)
-- Angular CLI (https://cli.angular.io/)
-- Text Editor (VSCode recomended https://code.visualstudio.com/)
-- Version control (Git recomended https://git-scm.com/)
+- [NodeJS](https://nodejs.org/en/)
+- [Angular CLI](https://cli.angular.io/)
+- Text Editor ([VSCode](https://code.visualstudio.com/) recommended)
+- Version control terminal/GUI ([Git](https://git-scm.com/) recomended)
 - Internet Connection
 - Linux/Windows/Mac
 
@@ -23,7 +23,7 @@ https://github.com/OpenHID/NUILabWeb.git
 
 NOTE: Make sure you are part of the contibutors, and have an SSH Key on your computer log to be able to upload and download from the repo.
 
-##Getting  Started
+## Getting  Started
 
 Once the repo has been downloaded completely on your computer, Make sure to install Angular CLI:
 
@@ -58,4 +58,8 @@ This comand creates a local server and opens a Internet Application that shows y
 
 Every time you make a change in the site, the page will refresh automatically after saving the changes.
 
+---
+
 Code away!
+
+Support provided by [Stonb](https://github.com/stonb) [Email](sboli001@fiu.edu).
