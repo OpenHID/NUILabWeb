@@ -73,7 +73,7 @@ export class EmployeeService {
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
-                      "email":"cvill141@fiu.edu",
+                      "email":"sboli001@fiu.edu",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuing the major."
