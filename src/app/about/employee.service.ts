@@ -128,7 +128,7 @@ export class EmployeeService {
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
-                      "email":"TBA",
+                      "email":"apujo010@fiu.edu",
                       "website":"website",
                       "image":"assets/images/people/andy_pujol.JPG",
                       "description":"Undergraduate research volunteer majoring Computer Science."
