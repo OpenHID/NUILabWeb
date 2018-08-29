@@ -123,14 +123,14 @@ export class EmployeeService {
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
                     {
-                      "name":"Andy Puyol",
+                      "name":"Andy Pujol",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/andy_pujol.JPG",
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
                     {
