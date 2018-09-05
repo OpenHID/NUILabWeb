@@ -59,7 +59,7 @@ export class PublicationService{
                     "links": 
                     [
                       {"from":"IEEE Xplore", "url":"https://link.springer.com/article/10.1007/s10439-013-0880-9"},
-                      {"from":"PDF", "url":"assets/papers/off-line_and_on-line_stress_detection_through_processing_of_the_pupil_diameter_signal.pdf"}
+                      {"from":"PDF", "url":"assets/papers/gesture_elicitation_for_3d_travel_via_multi-touch_and_mid-air_systems_for_procedurally_generated_pseudo-universe.pdf"}
                     ]
                   },
                   {
