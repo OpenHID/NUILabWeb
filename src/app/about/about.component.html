@@ -10,7 +10,7 @@
             <div class="col-md-8">
                 <br>
                 <h4>Who are We?</h4>
-                <p>We are a multi-disciplinary group, with our primary site at Colorado State University and with a still active site at Florida International University. We have included a diverse background of knowledge and origins. While CS-centric, former students have included majors, such as Statistics, Mathematics, Biology, Psychology, Engineering, and Architecture, among others. We have had members from multiple places, including USA, Cuba, Chile, Colombia, Jamaica, Dominican Republic, China, Brazil, and Venezuela, among others.</p>
+                <p style="text-align: justify">We are a multi-disciplinary group, with our primary site at Colorado State University and with a still active site at Florida International University. We have included a diverse background of knowledge and origins. While CS-centric, former students have included majors, such as Statistics, Mathematics, Biology, Psychology, Engineering, and Architecture, among others. We have had members from multiple places, including USA, Cuba, Chile, Colombia, Jamaica, Dominican Republic, China, Brazil, and Venezuela, among others.</p>
             </div>
         </div>
     </div>
@@ -32,13 +32,14 @@
         
         <div *ngFor="let person of faculty.PHD" class="row" style="padding:20px;">
             <div class="col-md-2" style="text-align:center;">
-                <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(34, 104, 45)">
             </div>
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-10">
                         <h3>{{person.name}}, {{person.education}}</h3>
                         <h5>{{person.position}}</h5>
+                        <h5 style="color: rgb(34, 104, 45)">{{person.university}}</h5>
                         <p>{{person.email}}</p>
                     </div>
                     
@@ -47,7 +48,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="text-align:justify">
                        <span [innerHTML]="person.description"> </span>
                     </div>
                 </div>
@@ -78,13 +79,14 @@
             </div>
             <div *ngFor="let person of current.PHD" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-10">
                             <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
                             <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
                             <p>{{person.email}}</p>
                         </div>
                         
@@ -93,7 +95,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="text-align:justify">
                         <span [innerHTML]="person.description"> </span>
                         </div>
                     </div>
@@ -111,13 +113,14 @@
             </div>
             <div *ngFor="let person of current.MDS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-10">
                             <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
                             <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
                             <p>{{person.email}}</p>
                         </div>
                         
@@ -126,7 +129,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="text-align:justify">
                         <span [innerHTML]="person.description"> </span>
                         </div>
                     </div>
@@ -143,13 +146,14 @@
             </div>
             <div *ngFor="let person of current.BS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-10">
                             <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
                             <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
                             <p>{{person.email}}</p>
                         </div>
                         
@@ -158,7 +162,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="text-align:justify">
                         <span [innerHTML]="person.description"> </span>
                         </div>
                     </div>
@@ -190,13 +194,14 @@
             </div>
             <div *ngFor="let person of oldStudents.PHD" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-10">
                             <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
                             <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
                             <p>{{person.email}}</p>
                         </div>
                         
@@ -205,7 +210,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="text-align:justify">
                         <span [innerHTML]="person.description"> </span>
                         </div>
                     </div>
@@ -223,13 +228,14 @@
             </div>
             <div *ngFor="let person of oldStudents.MDS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-10">
                             <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
                             <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
                             <p>{{person.email}}</p>
                         </div>
                         
@@ -238,7 +244,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="text-align:justify">
                         <span [innerHTML]="person.description"> </span>
                         </div>
                     </div>
@@ -255,13 +261,14 @@
             </div>
             <div *ngFor="let person of oldStudents.BS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-10">
                             <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
                             <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
                             <p>{{person.email}}</p>
                         </div>
                         
@@ -270,7 +277,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" style="text-align:justify">
                         <span [innerHTML]="person.description"> </span>
                         </div>
                     </div>

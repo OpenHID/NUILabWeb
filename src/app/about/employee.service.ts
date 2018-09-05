@@ -28,6 +28,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Visiting Assistant Professor & Director of NUILab",
                       "email":"fortega@colostate.edu",
+                      "university": "Colorado State University (Denver, CO)",
                       "cv":"http://openhid.com/fortega/cv.pdf",
                       "website":"website",
                       "image":"assets/images/people/francisco-ortega.jpg",
@@ -50,6 +51,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Graduate Research Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Graduate research assistant."
@@ -63,6 +65,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"sjami006@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/seidan-jamides.jpg",
                       "description":"Seidan Jamides is an undergraduate research assistant majoring Computer Science. He is currently performing research in gesture elicitation."
@@ -74,6 +77,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"sboli001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuing the major."
@@ -85,6 +89,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Research Volunteer",
                       "email":"cvill141@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/cristina-villarroel.jpg",
                       "description":"Cristina Villarroel is an undergraduate volunteer collaborating with OpenHID research."
@@ -96,6 +101,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Research Volunteer",
                       "email":"pmuel001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/pablo-mueller.jpg",
                       "description":"Pablo Mueller is an undergraduate volunteer researching gesture recognition."
@@ -107,6 +113,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -118,6 +125,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -129,6 +137,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"apujo010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/andy_pujol.JPG",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -140,6 +149,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -151,6 +161,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -162,6 +173,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -173,6 +185,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/arelys-alvarez.jpg",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -184,6 +197,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -195,6 +209,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"eurda010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -206,6 +221,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"mzock001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -217,6 +233,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Volunteer Assistant",
                       "email":"jsilv039@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
@@ -236,6 +253,7 @@ export class EmployeeService {
                       "major":"Statistics",
                       "position":"Graduate Research Assistant",
                       "email":"ktarr007@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/katherine-tarre.jpg",
                       "description":"Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving. Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving."
@@ -247,6 +265,7 @@ export class EmployeeService {
                       "major":"Biology, Computer Science",
                       "position":"Engineer at Ultimate Software (Former Graduate Research Assistant)",
                       "email":"rbalc001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/ruben-balcazar.jpg",
                       "description":"Ruben Balcazar was a graduate research assistant for the OpenHID Lab. His contributions include Unity plugins for OpenHID compliant hardware."
@@ -258,6 +277,7 @@ export class EmployeeService {
                       "major":"Electrical Engineer",
                       "position":"Senior Electrical Engineer at BioBrace (Former Graduate Research Assistant)",
                       "email":"jcale004@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/jules-calella.jpg",
                       "description":"Jules Calella is a graduate research assistant. He has a primary interest is in electronics, with a focus in communications and digital electronics."
@@ -269,6 +289,7 @@ export class EmployeeService {
                       "major":"Software Engineering, Computer Engineering",
                       "position":"Former graduate Research Assistant",
                       "email":"mkres006@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/mathew-kress.jpg",
                       "description":"Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens."
@@ -283,6 +304,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Engineer at Marmoset Toolbag (Former Undergraduate Research Assistant)",
                       "email":"agalv023@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/alain-galvan.jpg",
                       "description":"Alain Galvan was a researcher focused on graphics programming, procedurally generated environments, and making tools for artists/musicians. He's been awarded in MLH Hackathons, Newgrounds, Codepen, among other venues."
@@ -294,6 +316,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Engineer at Marmoset Toolbag (Former Undergraduate Research Assistant)",
                       "email":"lborg019@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/lukas-borges.jpg",
                       "description":"Lukas is an undergraduate focused on Augmented Reality and Game Development in Unity."
@@ -305,6 +328,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Senior Engineer at Citrix (Former Undergraduate Research Assistant)",
                       "email":"jasthoma@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/jason-lee-thomas.jpg",
                       "description":"Jason Lee Thomas was an undergraduate research assistant, who focused on low end C++ programming for the OpenHID Framework (TAMGeF)."
@@ -316,6 +340,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Embeded Software Engineer at BioBrace (Former Undergraduate Gesture Research Assistant)",
                       "email":"jbern102@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/jonathan-bernal.jpg",
                       "description":"Jonathan F. Bernal was an undergraduate research assistant, currently conducting research on Human-computer Multimodal Interaction and Augmented and Mixed Reality. Jonathan was also part of the ARCH program of the FIU Honors College. His major hobbies are biking and drawing."
@@ -327,6 +352,7 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Former Undergraduate Assistant",
                       "email":"laver008@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Luis Averhoff was an undergraduate research assistant during fall 2017 until summer 2018."
