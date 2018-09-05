@@ -27,7 +27,7 @@ export class EmployeeService {
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Visiting Assistant Professor & Director of NUILab",
-                      "email":"fortega@cs.fiu.edu",
+                      "email":"fortega@colostate.edu",
                       "cv":"http://openhid.com/fortega/cv.pdf",
                       "website":"website",
                       "image":"assets/images/people/francisco-ortega.jpg",
