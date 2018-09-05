@@ -79,7 +79,7 @@
             </div>
             <div *ngFor="let person of current.PHD" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
@@ -113,7 +113,7 @@
             </div>
             <div *ngFor="let person of current.MDS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
@@ -147,6 +147,35 @@
             <div *ngFor="let person of current.BS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
                     <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:justify">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="current.BSN.length">
+            <div class="row">
+            </div>
+            <div *ngFor="let person of current.BSN" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
                 </div>
                 <div class="col-md-10">
                     <div class="row">
@@ -262,6 +291,37 @@
             <div *ngFor="let person of oldStudents.BS" class="row" style="padding:20px;">
                 <div class="col-md-2" style="text-align:center;">
                     <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:justify">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="oldStudents.BSN.length">
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+            <div *ngFor="let person of oldStudents.BSN" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 70%; max-height: 200px; max-width: 200px;">
                 </div>
                 <div class="col-md-10">
                     <div class="row">

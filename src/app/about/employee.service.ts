@@ -71,18 +71,6 @@ export class EmployeeService {
                       "description":"Seidan Jamides is an undergraduate research assistant majoring Computer Science. He is currently performing research in gesture elicitation."
                     },
                     {
-                      "name":"Santiago Bolivar",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"sboli001@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
-                      "description":"Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuing the major."
-                    },
-                    {
                       "name":"Cristina Villarroel",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
@@ -107,6 +95,45 @@ export class EmployeeService {
                       "description":"Pablo Mueller is an undergraduate volunteer researching gesture recognition."
                     },
                     {
+                      "name":"Andy Pujol",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"apujo010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/andy_pujol.JPG",
+                      "description":"Undergraduate research volunteer majoring Computer Science."
+                    },
+                    {
+                      "name":"Arelys Alvarez",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Volunteer Assistant",
+                      "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/arelys-alvarez.jpg",
+                      "description":"Undergraduate research volunteer majoring Computer Science."
+                    },
+                  ],
+                  "BSN":
+                  [
+                    {
+                      "name":"Santiago Bolivar",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"sboli001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/openhid-logo.png",
+                      "description":"Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuing the major."
+                    },
+                    {
                       "name":"Joseph Medina",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
@@ -128,18 +155,6 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
-                    },
-                    {
-                      "name":"Andy Pujol",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"apujo010@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/andy_pujol.JPG",
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
                     {
@@ -176,18 +191,6 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
-                    },
-                    {
-                      "name":"Arelys Alvarez",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
-                      "email":"TBA",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/arelys-alvarez.jpg",
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
                     {
@@ -345,6 +348,10 @@ export class EmployeeService {
                       "image":"assets/images/people/jonathan-bernal.jpg",
                       "description":"Jonathan F. Bernal was an undergraduate research assistant, currently conducting research on Human-computer Multimodal Interaction and Augmented and Mixed Reality. Jonathan was also part of the ARCH program of the FIU Honors College. His major hobbies are biking and drawing."
                     },
+                    
+                  ],
+                  "BSN":
+                  [
                     {
                       "name":"Luis Averhoff",
                       "education":"B.S.",
@@ -362,5 +369,4 @@ export class EmployeeService {
               }
         );
     }
-
-}
+  }
