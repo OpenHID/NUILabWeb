@@ -28,10 +28,10 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Visiting Assistant Professor & Director of NUILab",
                       "email":"fortega@colostate.edu",
-                      "university": "Colorado State University (Denver, CO)",
+                      "university": "Colorado State University (Fort Collins, CO)",
                       "cv":"http://openhid.com/fortega/cv.pdf",
                       "website":"website",
-                      "image":"assets/images/people/francisco-ortega.jpg",
+                      "image":"assets/images/people/fortega_new.png",
                       "description":"<p>Dr. Francisco R. Ortega is an Assistant Professor at Colorado State University. Dr. Ortega earned his Ph.D. in Computer Science (CS) in the field of Human-Computer Interaction (HCI) and 3D User Interfaces (3DUI) from Florida International University (FIU). He also hold a position of Post-Doc and Visiting Assistant Professor at FIU between February 2015 to July 2018. Broadly speaking, his research has focused on gesture interaction, which includes gesture recognition and elicitation. His main research area focuses on improving user interaction by (a) eliciting (hand and full-body) gesture sets by user elicitation, and (b) developing interactive gesture-recognition algorithms. His secondary research aims to discover how to increase interest for CS in non-CS entry-level college students via virtual and augmented reality games. His research has resulted in multiple peer-reviewed publications in venues such as ACM ISS, ACM SUI, and IEEE 3DUI, among others. He is the first-author of Interaction Design for 3D User Interfaces: The World of Modern Input Devices for Research, Applications, and Game Development book by CRC Press. Dr. Ortega serves as Vertically Integrated Projects coordinator that promotes applied research for undergraduate students across disciplines.<\/p> <p>Dr. Ortega is committed to teaching and integrating research in the classroom. He has taught multiple courses including CS capstone, Programming II (Java), Programming III (C), Operating Systems, Principles of Relational Database Management Systems (graduate), Network Management and Control Standards (graduate), Net-Centric (using Python), Web Application Programming, Website Management, and Construction, Windows Programming (C#), Digital Forensics, Advanced Digital Forensics (graduate), Advanced Ethical Hacking (graduate), and Practical Applied Security (graduate).<\/p>"
                     }
                   ]
@@ -75,24 +75,24 @@ export class EmployeeService {
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Research Volunteer",
+                      "position":"Undergraduate Research Assistant",
                       "email":"cvill141@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/cristina-villarroel.jpg",
-                      "description":"Cristina Villarroel is an undergraduate volunteer collaborating with OpenHID research."
+                      "description":"Cristina Villarroel is an undergraduate research assistant collaborating with OpenHID research."
                     },
                     {
                       "name":"Pablo Mueller",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Research Volunteer",
+                      "position":"Undergraduate Research Assistant",
                       "email":"pmuel001@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/pablo-mueller.jpg",
-                      "description":"Pablo Mueller is an undergraduate volunteer researching gesture recognition."
+                      "description":"Pablo Mueller is an undergraduate assistant researching gesture recognition."
                     },
                     {
                       "name":"Andy Pujol",
@@ -104,19 +104,19 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/andy_pujol.JPG",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Arelys Alvarez",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/arelys-alvarez.jpg",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                   ],
                   "BSN":
@@ -131,26 +131,26 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Santiago Bolivar is an undergraduate volunteer researching about the impact of Computer Science to interest minorities on persuing the major."
+                      "description":"Santiago Bolivar is an undergraduate assistant researching about the impact of Computer Science to interest minorities on persuing the major."
                     },
                     {
                       "name":"Joseph Medina",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Catherine Angelini",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Volunteer",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
@@ -162,67 +162,67 @@ export class EmployeeService {
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Ciana Rogers",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Fidel Hernandez",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Vanesa Perez",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Edilmary Urdaneta",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Assistant",
                       "email":"eurda010@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Maia Obregon",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Volunteer",
                       "email":"mzock001@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
@@ -234,7 +234,7 @@ export class EmployeeService {
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Undergraduate Volunteer Assistant",
+                      "position":"Undergraduate Research Volunteer",
                       "email":"jsilv039@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
@@ -254,7 +254,7 @@ export class EmployeeService {
                       "education":"B.S., M.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Statistics",
-                      "position":"Graduate Research Assistant",
+                      "position":"Ph.D. student at FIU with Dr. Naphtali D. Rishe",
                       "email":"ktarr007@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
