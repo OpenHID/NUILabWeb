@@ -31,7 +31,7 @@ export class EmployeeService {
                       "university": "Colorado State University (Fort Collins, CO)",
                       "cv":"http://openhid.com/fortega/cv.pdf",
                       "website":"website",
-                      "image":"assets/images/people/fortega_new.png",
+                      "image":"assets/images/people/francisco-ortega2.jpg",
                       "description":"<p>Dr. Francisco R. Ortega is an Assistant Professor at Colorado State University. Dr. Ortega earned his Ph.D. in Computer Science (CS) in the field of Human-Computer Interaction (HCI) and 3D User Interfaces (3DUI) from Florida International University (FIU). He also hold a position of Post-Doc and Visiting Assistant Professor at FIU between February 2015 to July 2018. Broadly speaking, his research has focused on gesture interaction, which includes gesture recognition and elicitation. His main research area focuses on improving user interaction by (a) eliciting (hand and full-body) gesture sets by user elicitation, and (b) developing interactive gesture-recognition algorithms. His secondary research aims to discover how to increase interest for CS in non-CS entry-level college students via virtual and augmented reality games. His research has resulted in multiple peer-reviewed publications in venues such as ACM ISS, ACM SUI, and IEEE 3DUI, among others. He is the first-author of Interaction Design for 3D User Interfaces: The World of Modern Input Devices for Research, Applications, and Game Development book by CRC Press. Dr. Ortega serves as Vertically Integrated Projects coordinator that promotes applied research for undergraduate students across disciplines.<\/p> <p>Dr. Ortega is committed to teaching and integrating research in the classroom. He has taught multiple courses including CS capstone, Programming II (Java), Programming III (C), Operating Systems, Principles of Relational Database Management Systems (graduate), Network Management and Control Standards (graduate), Net-Centric (using Python), Web Application Programming, Website Management, and Construction, Windows Programming (C#), Digital Forensics, Advanced Digital Forensics (graduate), Advanced Ethical Hacking (graduate), and Practical Applied Security (graduate).<\/p>"
                     }
                   ]
@@ -53,7 +53,7 @@ export class EmployeeService {
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/fernando-zayas.jpg",
                       "description":"Graduate research assistant."
                     }
                   ],
@@ -103,7 +103,7 @@ export class EmployeeService {
                       "email":"apujo010@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/andy_pujol.JPG",
+                      "image":"assets/images/people/andy-pujol.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
@@ -118,9 +118,6 @@ export class EmployeeService {
                       "image":"assets/images/people/arelys-alvarez.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
-                  ],
-                  "BSN":
-                  [
                     {
                       "name":"Santiago Bolivar",
                       "education":"B.S.",
@@ -130,9 +127,9 @@ export class EmployeeService {
                       "email":"sboli001@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/santiago-bolivar.jpg",
                       "description":"Santiago Bolivar is an undergraduate assistant researching about the impact of Computer Science to interest minorities on persuing the major."
-                    },
+                    },                  
                     {
                       "name":"Joseph Medina",
                       "education":"B.S.",
@@ -142,9 +139,25 @@ export class EmployeeService {
                       "email":"TBA",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/joseph-medina.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
+                    {
+                      "name":"Jason Garcia",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"TBA",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/jason-garcia.jpg",
+                      "description":"Undergraduate research assistant majoring Computer Science."
+                    },
+                  ],
+                  "BSN":
+                  [
+
                     {
                       "name":"Catherine Angelini",
                       "education":"B.S.",
@@ -156,18 +169,6 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
-                    },
-                    {
-                      "name":"Jason Garcia",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"TBA",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
                       "name":"Ciana Rogers",
@@ -348,10 +349,6 @@ export class EmployeeService {
                       "image":"assets/images/people/jonathan-bernal.jpg",
                       "description":"Jonathan F. Bernal was an undergraduate research assistant, currently conducting research on Human-computer Multimodal Interaction and Augmented and Mixed Reality. Jonathan was also part of the ARCH program of the FIU Honors College. His major hobbies are biking and drawing."
                     },
-                    
-                  ],
-                  "BSN":
-                  [
                     {
                       "name":"Luis Averhoff",
                       "education":"B.S.",
@@ -361,9 +358,14 @@ export class EmployeeService {
                       "email":"laver008@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/luis-averhoff.jpg",
                       "description":"Luis Averhoff was an undergraduate research assistant during fall 2017 until summer 2018."
                     }
+                    
+                  ],
+                  "BSN":
+                  [
+                    
                   ]
                 }
               }
