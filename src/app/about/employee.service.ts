@@ -154,6 +154,7 @@ export class EmployeeService {
                       "image":"assets/images/people/jason-garcia.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
+                    
                   ],
                   "BSN":
                   [
@@ -241,6 +242,21 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
+                    }
+                  ],
+                  "BSCSU": //Have to come up with a way to make this more organized and streamlined
+                  [
+                    {
+                      "name":"Kellyn Dassler",
+                      "education":"B.S.",
+                      "universtiy":"Colorado State University",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"kellyndassler@gmail.com ",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "website":"website",
+                      "image":"assets/images/people/kellyn-dassler.jpg",
+                      "description":"Undergraduate research assistant majoring Computer Science."
                     }
                   ]
                 },
