@@ -220,18 +220,6 @@ export class EmployeeService {
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
-                      "name":"Maia Obregon",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Volunteer",
-                      "email":"mzock001@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
-                    },
-                    {
                       "name":"Jessica Silva",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
@@ -268,7 +256,7 @@ export class EmployeeService {
                   [
                     {
                       "name":"Katherine Tarre",
-                      "education":"B.S., M.S., Ph.D.",
+                      "education":"B.S., M.S.",
                       "universtiy":"Florida International Universty",
                       "major":"Statistics",
                       "position":"Ph.D. student at FIU with Dr. Naphtali D. Rishe",
@@ -376,12 +364,24 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/luis-averhoff.jpg",
                       "description":"Luis Averhoff was an undergraduate research assistant during fall 2017 until summer 2018."
-                    }
+                    },
+                    
                     
                   ],
                   "BSN":
                   [
-                    
+                    {
+                      "name":"Maia Obregon",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Volunteer",
+                      "email":"mzock001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/openhid-logo.png",
+                      "description":"Maia Obregon was an undergraduate research volunteer majoring in Computer Science."
+                    }
                   ]
                 }
               }

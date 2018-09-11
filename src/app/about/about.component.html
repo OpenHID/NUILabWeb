@@ -1,9 +1,10 @@
 <div class="container">
     <!-- Header Group photo -->
     <div id="headers">
+        
         <div class="bottom" style="background: url('/assets/images/people/header_photo.jpg'); width: 100%; height: 280px; background-size: cover; background-position: 50% 25%;"></div>
         <div class="top" style="background: url('/assets/images/people/header_photo2.jpg'); width: 100%; height: 280px; background-size: cover; background-position: 50% 25%;"></div>
-
+        <!--<i class="arrow right"></i> (Use a button instead)-->
     </div>
 
     <div class="table">
@@ -141,43 +142,11 @@
             </div>
         </div>
 
-        <!-- Current Bachelor Students -->
-        <div *ngIf="current.BS.length">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Bachelor Students</h3>
-                </div>
-            </div>
-            <div *ngFor="let person of current.BS" class="row" style="padding:20px;">
-                <div class="col-md-2" style="text-align:center;">
-                    <img [src]="person.image" style="width: 100%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
-                </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <div class="col-md-10">
-                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
-                            <h5>{{person.position}}</h5>
-                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
-                            <p>{{person.email}}</p>
-                        </div>
-                        
-                        <div class="col-md-2">
-                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" style="text-align:justify">
-                        <span [innerHTML]="person.description"> </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Current Bachelor Students -->
+         <!-- Current CSU Bachelor Students -->
         <div *ngIf="current.BSCSU.length">
             <div class="row">
                 <div class="col-md-12">
+                    <h3>Bachelor Students</h3>
                 </div>
             </div>
             <div *ngFor="let person of current.BSCSU" class="row" style="padding:20px;">
@@ -206,6 +175,41 @@
             </div>
         </div>
 
+
+        <!-- Current Bachelor Students -->
+        <div *ngIf="current.BS.length">
+            <div class="row">
+                <div class="col-md-12">
+                   
+                </div>
+            </div>
+            <div *ngFor="let person of current.BS" class="row" style="padding:20px;">
+                <div class="col-md-2" style="text-align:center;">
+                    <img [src]="person.image" style="width: 100%; max-height: 200px; max-width: 200px; border: 3px solid rgb(18, 18, 124);">
+                </div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                            <h5>{{person.position}}</h5>
+                            <h5 style="color: rgb(18, 18, 124)">{{person.university}}</h5>
+                            <p>{{person.email}}</p>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:justify">
+                        <span [innerHTML]="person.description"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Bachelor Students with no picture-->
         <div *ngIf="current.BSN.length">
             <div class="row">
             </div>

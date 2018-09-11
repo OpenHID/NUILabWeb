@@ -82,3 +82,38 @@ button:hover, a:hover {
     animation-duration: 10s;
     animation-direction: alternate;
 }
+
+
+#headers div.transparent {
+    opacity:0;
+}
+
+#header_onclick {
+    cursor:pointer;
+}
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    
+    padding: 3px;
+    float: right;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
