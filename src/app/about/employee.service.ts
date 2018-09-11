@@ -39,9 +39,20 @@ export class EmployeeService {
                 "Current":
                 {
                   "PHD":
-                    {
-                     
-                    },
+                    [
+                      {
+                        "name":"Adam Williams",
+                        "education":"Ph.D.",
+                        "universtiy":"Florida International Universty",
+                        "major":"Computer Science",
+                        "position":"Graduate Research Assistant",
+                        "email":"adam.sinclair.williams@colostate.edu",
+                        "university": "Colorado State University (Fort Collins, CO)",
+                        "website":"website",
+                        "image":"assets/images/people/adam-williams.png",
+                        "description":"Graduate research assistant researching 3D user interactions using gestures and speech."
+                      }
+                    ],
                   "MDS":
                   [
                     {
