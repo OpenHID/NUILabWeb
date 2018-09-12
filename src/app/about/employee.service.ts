@@ -68,6 +68,21 @@ export class EmployeeService {
                       "description":"Graduate research assistant."
                     }
                   ],
+                  "MDSCSU":
+                  [
+                    {
+                      "name":"Aditya Raikwar",
+                      "education":"B.S.,M.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Graduate Research Assistant",
+                      "email":"aditya.raikwar@colostate.edu",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "website":"website",
+                      "image":"assets/images/people/openhid-logo.png",
+                      "description":"Graduate research assistant researching 3D user interfaces using gesture and speech and with an interest in Machine Learning."
+                    }
+                  ],
                   "BS":
                   [
                     {
@@ -165,19 +180,6 @@ export class EmployeeService {
                       "image":"assets/images/people/jason-garcia.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
-                    {
-                      "name":"Edilmary Urdaneta",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"eurda010@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/eldimary-urdaneta.png",
-                      "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    
                   ],
                   "BSN":
                   [
@@ -257,6 +259,21 @@ export class EmployeeService {
                       "image":"assets/images/people/kellyn-dassler.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     }
+                  ],
+                  "Affiliated":
+                  [
+                    {
+                      "name":"Edilmary Urdaneta",
+                      "education":"B.A.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Chemistry",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"eurda010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"http://pwrlab.fiu.edu/members/",
+                      "image":"assets/images/people/eldimary-urdaneta.png",
+                      "description":"Undergraduate research assistant majoring in Chemistry and a minor in Biology."
+                    },
                   ]
                 },
                 "Former":
