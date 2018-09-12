@@ -11,6 +11,7 @@ import { AboutComponent }         from './about/about.component';
 import { ContactComponent }       from './contact/contact.component';
 import { HomeComponent }          from './home/home.component';
 import { ProjectsComponent }      from './projects/projects.component';
+import { EventsComponent }        from './events/events.component';
 import { PublicationsComponent }  from './publications/publications.component';
 import { ResourcesComponent }     from './resources/resources.component';
 import { TeachingComponent }      from './teaching/teaching.component';
@@ -34,6 +35,7 @@ import {AgmCoreModule} from "@agm/core";
     ContactComponent,
     HomeComponent,
     ProjectsComponent,
+    EventsComponent,
     PublicationsComponent,
     ResourcesComponent,
     TeachingComponent,

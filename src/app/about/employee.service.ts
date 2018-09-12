@@ -115,7 +115,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/andy-pujol.jpg",
-                      "description":"Undergraduate research assistant majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring in Computer Science and currently working on Web Development."
                     },
                     {
                       "name":"Arelys Alvarez",
@@ -163,6 +163,18 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/jason-garcia.jpg",
+                      "description":"Undergraduate research assistant majoring Computer Science."
+                    },
+                    {
+                      "name":"Edilmary Urdaneta",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"eurda010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/eldimary-urdaneta.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     
@@ -213,18 +225,6 @@ export class EmployeeService {
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"TBA",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    {
-                      "name":"Edilmary Urdaneta",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"eurda010@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
@@ -385,13 +385,13 @@ export class EmployeeService {
                       "name":"Maia Obregon",
                       "education":"B.S.",
                       "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
+                      "major":"Psychology",
                       "position":"Undergraduate Research Volunteer",
                       "email":"mzock001@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/openhid-logo.png",
-                      "description":"Maia Obregon was an undergraduate research volunteer majoring in Computer Science."
+                      "description":"Maia Obregon was an undergraduate research volunteer currently pursuing a Masters Degree."
                     }
                   ]
                 }
