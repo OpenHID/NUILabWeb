@@ -62,14 +62,52 @@ export class EmployeeService {
                       "cv":"cv",
                       "website":"http://www.cs.colostate.edu/~ross/",
                       "image":"assets/images/people/ross-beveridge.jpeg",
-                      "description":"<p>Dr. Ross Beveridge is a Professor in the Computer Science Department at Colorado State University. The best part of being a professor for him is the balance between teaching and research. He says that teaching provides immediate gratification: there is always a new lecture to prepare and always new and inquisitive students to question us as they learn. Both what he teaches and how he teaches is constantly changing, and the intellectual give-and-take with students is invigorating in his opinion. Balancing the immediacy of teaching is research. He works in an area called computer vision. People can visually see and recognize objects effortlessly. For example, a person can instantly recognize a squirrel on a log. The goal of computer vision is to develop machines that can do this just like people do. Much of his own work on computer vision has been done in partnership with his colleague Bruce Draper; the two of them jointly run the Computer Vision Group at CSU. His recent research is centered enhanced humman machine communication through shared context including mutual understanding of physical presence non-verbal communication.<\/p>"
+                      "description":"<p>Dr. Ross Beveridge is a Professor in the Computer Science Department at Colorado State University. The best part of being a professor for him is the balance between teaching and research. He says that teaching provides immediate gratification: there is always a new lecture to prepare and always new and inquisitive students to question us as they learn. Both what he teaches and how he teaches is constantly changing, and the intellectual give-and-take with students is invigorating in his opinion. <br><br>Balancing the immediacy of teaching is research. He works in an area called computer vision. People can visually see and recognize objects effortlessly. For example, a person can instantly recognize a squirrel on a log. The goal of computer vision is to develop machines that can do this just like people do. Much of his own work on computer vision has been done in partnership with his colleague Bruce Draper; the two of them jointly run the Computer Vision Group at CSU. His recent research is centered enhanced humman machine communication through shared context including mutual understanding of physical presence non-verbal communication.<\/p>"
                     },
-                    
+                   
                   ],
 
                   "AffiliatedFIU":
                   [
-
+                    {
+                      "name":"Valentina Bruk-Lee",
+                      "education":"Ph.D.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Organizational Psychology",
+                      "position":"Associate Professor",
+                      "email":"vblee@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "cv":"cv",
+                      "website":"http://myweb.fiu.edu/vblee/",
+                      "image":"assets/images/people/valentina-lee.png",
+                      "description":"<p>Dr. Bruk-Lee’s research is primarily focused on the topics of interpersonal conflict in organizations, employee satisfaction, occupational health and well-being, employee selection. She is also interested in counter-productivity in organizations and the role of personality in the job stress process. Dr. Bruk-Lee has consulted with both private and public sector organizations in the areas of employee selection, job analysis, performance measurement, and competency modeling. She has also led the development and localization of assessments used in global selection programs. <br><br>Dr. Bruk-Lee has served on the state level committee for the APA’s Psychologically Healthy Workplace Award and on SIOP’s Professional Practice Committee on Occupational Health, Safety, and Well-Being.<\/p>"
+                    },
+                    {
+                      "name":"Asia Eaton",
+                      "education":"Ph.D.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Psychology and Gender Studies",
+                      "position":"Assistant Professor",
+                      "email":"aeaton@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "cv":"cv",
+                      "website":"http://faculty.fiu.edu/~aeaton/",
+                      "image":"assets/images/people/asia-eaton.png",
+                      "description":"<p>Broadly, Dr. Eaton's research explores the relationship between social power and gender in the U.S. and the implications of enacting powerful roles and gender roles for individuals’ attitudes and behaviors. She is currently examining how gender and social power support one another and interact in organizations and in intimate relationships.<\/p>"
+                    },
+                    {
+                      "name":"Newton D’souza",
+                      "education":"Ph.D.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Architecture",
+                      "position":"Chair and Associate Professor",
+                      "email":"ndsouza@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "cv":"cv",
+                      "website":"http://carta.fiu.edu/interiors/faculty-staff/faculty-directory/",
+                      "image":"assets/images/people/newton-dsouza.jpg",
+                      "description":"<p>Newton D’souza is an Associate Professor at the Department of Interior Architecture, Florida International University. He holds a PhD in architecture from University of Wisconsin-Milwaukee, and a Masters degree in design from the National University of Singapore. He has previously served as a Director of Graduate Studies at the Department of Architectural Studies, and a faculty collaborator at the Immersive Lab, University of Missouri-Columbia. He has also practiced as an architect and interior designer at Bangalore, India. <br><br>During the past two decades, his research and teaching has focused on design cognition, creativity, human factors for design, environment-behavior and emerging media environments. He is widely published in Journal of Design Studies, Architecture Research Quarterly, and Journal of Design Research. Currently, he is authoring a book titled ‘The Multi-Skilled Designer: A Cognitive Explanation for Diversity in Architectural Thinking’ from Routledge publications involving archival research from reputed and alternative architecture design practices. He initiated the Creative Convergence Network, at the University of Missouri involving a multidisciplinary faculty forum to investigate multidisciplinary team creativity, and whose work was recently published in a special section of journal of design studies.<br><br>He serves as an active member of the Environment Design Research Association and the Design Thinking Research Symposium. He is a recipient of several grant funding awards including MU System Research Board award, MU Research Council Award, and Mizzou Advantage Media of the Future Award. He has served as a chair and committee member for various graduate doctoral committees and was a recipient of 2014 Ernest L. Boyer International Award for Excellence in Teaching, Learning, and Technology.<\/p>"
+                    },
                   ]
 
                 },
