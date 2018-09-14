@@ -79,7 +79,7 @@ export class EmployeeService {
                       "email":"aditya.raikwar@colostate.edu",
                       "university": "Colorado State University (Fort Collins, CO)",
                       "website":"website",
-                      "image":"assets/images/people/aditya-raikwar.png",
+                      "image":"assets/images/people/aditya-raikwar2.png",
                       "description":"Graduate research assistant researching 3D user interfaces using gesture and speech and with an interest in Machine Learning."
                     }
                   ],
@@ -192,9 +192,6 @@ export class EmployeeService {
                       "image":"assets/images/people/catherine-angelini.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
-                  ],
-                  "BSN":
-                  [
                     {
                       "name":"Ciana Rogers",
                       "education":"B.S.",
@@ -204,7 +201,7 @@ export class EmployeeService {
                       "email":"ciana.rogers@gmail.com",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/ciana-rogers.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
                     {
@@ -216,9 +213,12 @@ export class EmployeeService {
                       "email":"fhern103@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/fidel-hernandez.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
+                  ],
+                  "BSN":
+                  [
                     {
                       "name":"Vanesa Perez",
                       "education":"B.S.",
