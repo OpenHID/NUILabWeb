@@ -13,6 +13,7 @@ import { TeachingComponent }      from './teaching/teaching.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  { path: 'Home', component: HomeComponent },
   { path: 'About', component: AboutComponent },
   { path: 'Contact', component: ContactComponent },
   { path: 'Home', component: HomeComponent },
@@ -20,8 +21,8 @@ const routes: Routes = [
   { path: 'Events', component: EventsComponent },
   { path: 'Publications', component: PublicationsComponent },
   { path: 'Resources', component: ResourcesComponent },
-  { path: 'Teaching', component: TeachingComponent }
-  //{ path: '**', component: NotFoundComponent }
+  { path: 'Teaching', component: TeachingComponent },
+  { path: '**', redirectTo: 'Home', pathMatch: 'full' }
 ];
 
 @NgModule({

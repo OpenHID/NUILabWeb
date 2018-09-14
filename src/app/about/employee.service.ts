@@ -323,10 +323,7 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/jessica-silva.png",
                       "description":"Undergraduate research volunteer majoring Computer Science."
-                    }
-                  ],
-                  "BSN":
-                  [
+                    },
                     {
                       "name":"Vanesa Perez",
                       "education":"B.S.",
@@ -336,11 +333,11 @@ export class EmployeeService {
                       "email":"vpere159@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/vanesa-perez.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    
+                    }
                   ],
+    
                   "BSCSU": //Have to come up with a way to make this more organized and streamlined
                   [
                     {
