@@ -59,14 +59,61 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
+
+<!-- Affiliated Faculty People -->
+<div class="container">
+    <div class="table">
+        <div class="row">
+            <div class="col-md-12 PeopleTitle">
+                <h2>Affiliated Faculty</h2>
+            </div>
+        </div>
+
+
+<div *ngIf="faculty.AffiliatedCSU.length">
+    <div class="row">
+        <div class="col-md-12">
+
+        </div>
+    </div>
+    <div *ngFor="let person of faculty.AffiliatedCSU" class="row" style="padding:20px;">
+        <div class="col-md-2" style="text-align:center;">
+            <img [src]="person.image" style="width: 100%; max-height: 200px; max-width: 200px; border: 3px solid rgb(34, 104, 45);">
+        </div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>{{person.name}}, {{person.major}} - {{person.education}}</h3>
+                    <h5>{{person.position}}</h5>
+                    <h5 style="color: rgb(34, 104, 45)">{{person.university}}</h5>
+                    <p>{{person.email}}</p>
+                </div>
+                
+                <div class="col-md-2">
+                    <a [href]="person.website" target="NEW"><h5>Website</h5></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align:justify">
+                <span [innerHTML]="person.description"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 <div class="container">
     <br><hr><br>
 </div>
-<!-- All current Students -->
 
+
+<!-- All current Students -->
 <div class="container">
     <div class="table">
         <div class="row">
@@ -288,14 +335,13 @@
                             </div>
                             
                             <div class="col-md-2">
-                                <!-- <a [href]="person.cv" target="NEW"><h5>CV</h5></a> -->
+                                 <a [href]="person.website" target="NEW"style="color:rgb(10, 6, 245)"><h5>Working Lab</h5></a> 
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12" style="text-align:justify">
                             <span [innerHTML]="person.description"> </span>
-                            <br>
-                            <a [href]="person.website" style="color:rgb(10, 6, 245)">Working Lab</a>
+
                             </div>
                         </div>
                     </div>

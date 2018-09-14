@@ -23,19 +23,77 @@ export class EmployeeService {
                   [
                     {
                       "name":"Francisco R. Ortega",
-                      "education":"Ph. D.",
+                      "education":"Ph.D.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Visiting Assistant Professor & Director of NUILab",
                       "email":"fortega@colostate.edu",
                       "university": "Colorado State University (Fort Collins, CO)",
-                      "cv":"http://openhid.com/fortega/cv.pdf",
+                      "cv":"http://nuilab.org/assets/images/people/francisco-ortega.pdf",
                       "website":"website",
                       "image":"assets/images/people/francisco-ortega3.jpg",
                       "description":"<p>Dr. Francisco R. Ortega is an Assistant Professor at Colorado State University. Dr. Ortega earned his Ph.D. in Computer Science (CS) in the field of Human-Computer Interaction (HCI) and 3D User Interfaces (3DUI) from Florida International University (FIU). He also hold a position of Post-Doc and Visiting Assistant Professor at FIU between February 2015 to July 2018. Broadly speaking, his research has focused on gesture interaction, which includes gesture recognition and elicitation. His main research area focuses on improving user interaction by (a) eliciting (hand and full-body) gesture sets by user elicitation, and (b) developing interactive gesture-recognition algorithms. His secondary research aims to discover how to increase interest for CS in non-CS entry-level college students via virtual and augmented reality games. His research has resulted in multiple peer-reviewed publications in venues such as ACM ISS, ACM SUI, and IEEE 3DUI, among others. He is the first-author of Interaction Design for 3D User Interfaces: The World of Modern Input Devices for Research, Applications, and Game Development book by CRC Press. Dr. Ortega serves as Vertically Integrated Projects coordinator that promotes applied research for undergraduate students across disciplines.<\/p> <p>Dr. Ortega is committed to teaching and integrating research in the classroom. He has taught multiple courses including CS capstone, Programming II (Java), Programming III (C), Operating Systems, Principles of Relational Database Management Systems (graduate), Network Management and Control Standards (graduate), Net-Centric (using Python), Web Application Programming, Website Management, and Construction, Windows Programming (C#), Digital Forensics, Advanced Digital Forensics (graduate), Advanced Ethical Hacking (graduate), and Practical Applied Security (graduate).<\/p>"
+                    },
+                  ],
+
+                  "AffiliatedCSU":
+                  [
+                    {
+                      "name":"Bruce A. Draper",
+                      "education":"Ph.D.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Professor",
+                      "email":"draper@colostate.edu",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "cv":"cv",
+                      "website":"http://www.cs.colostate.edu/~draper/",
+                      "image":"assets/images/people/bruce-draper.png",
+                      "description":"<p>Dr. Bruce A. Draper is a professor of Computer Science at Colorado State University; he also holds an appointment in the Molecular, Cellular and Integrated Neuroscience (MCIN) program. He teaches at virtually all levels of the curriculum, with a recent emphasis at the undergraduate level on CS253 (Software Engineering in C++) and at the graduate level on CS510 (Image Computation). His research is in recognizing people, their gestures, and their actions, and applying this to complex systems of interacting people and machines. He has served the field in many capacities, including as General Chair of CVPR in 1999 and a senior program committee member for AAAI in 2015 and 2016, but his recent service efforts have concentrated on the department, serving as graduate program director for three years, serving multiple terms on the executive committee, and working toward greater diversity within the department.<\/p>"
+                    },
+                    {
+                      "name":"Ross Beveridge",
+                      "education":"Ph.D.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Professor",
+                      "email":"ross@cs.colostate.edu ",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "cv":"cv",
+                      "website":"http://www.cs.colostate.edu/~ross/",
+                      "image":"assets/images/people/ross-beveridge.jpeg",
+                      "description":"<p>Dr. Ross Beveridge is a Professor in the Computer Science Department at Colorado State University. The best part of being a professor for him is the balance between teaching and research. He says that teaching provides immediate gratification: there is always a new lecture to prepare and always new and inquisitive students to question us as they learn. Both what he teaches and how he teaches is constantly changing, and the intellectual give-and-take with students is invigorating in his opinion. Balancing the immediacy of teaching is research. He works in an area called computer vision. People can visually see and recognize objects effortlessly. For example, a person can instantly recognize a squirrel on a log. The goal of computer vision is to develop machines that can do this just like people do. Much of his own work on computer vision has been done in partnership with his colleague Bruce Draper; the two of them jointly run the Computer Vision Group at CSU. His recent research is centered enhanced humman machine communication through shared context including mutual understanding of physical presence non-verbal communication.<\/p>"
+                    },
+                    
+                  ],
+
+                  "AffiliatedFIU":
+                  [
+
+                  ]
+
+                },
+
+                "AF": //Not being used
+                {
+                  "PHD":
+                  [
+                    {
+                      "name":"Bruce A. Draper",
+                      "education":"Ph.D.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Professor",
+                      "email":"draper@colostate.edu",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "cv":"cv",
+                      "website":"http://www.cs.colostate.edu/~draper/",
+                      "image":"assets/images/people/bruce-draper.png",
+                      "description":"<p>Dr. Bruce A. Draper is a professor of Computer Science at Colorado State University; he also holds an appointment in the Molecular, Cellular and Integrated Neuroscience (MCIN) program. He teaches at virtually all levels of the curriculum, with a recent emphasis at the undergraduate level on CS253 (Software Engineering in C++) and at the graduate level on CS510 (Image Computation). His research is in recognizing people, their gestures, and their actions, and applying this to complex systems of interacting people and machines. He has served the field in many capacities, including as General Chair of CVPR in 1999 and a senior program committee member for AAAI in 2015 and 2016, but his recent service efforts have concentrated on the department, serving as graduate program director for three years, serving multiple terms on the executive committee, and working toward greater diversity within the department.<\/p>"
                     }
                   ]
                 },
+                
                 "Current":
                 {
                   "PHD":
@@ -216,6 +274,18 @@ export class EmployeeService {
                       "image":"assets/images/people/fidel-hernandez.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
+                    {
+                      "name":"Jessica Silva",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Volunteer",
+                      "email":"jsilv039@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/jessica-silva.png",
+                      "description":"Undergraduate research volunteer majoring Computer Science."
+                    }
                   ],
                   "BSN":
                   [
@@ -231,18 +301,7 @@ export class EmployeeService {
                       "image":"assets/images/people/openhid-logo.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     },
-                    {
-                      "name":"Jessica Silva",
-                      "education":"B.S.",
-                      "universtiy":"Florida International Universty",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Volunteer",
-                      "email":"jsilv039@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
-                    }
+                    
                   ],
                   "BSCSU": //Have to come up with a way to make this more organized and streamlined
                   [
