@@ -26,7 +26,7 @@ export class EmployeeService {
                       "education":"Ph.D.",
                       "universtiy":"Florida International Universty",
                       "major":"Computer Science",
-                      "position":"Visiting Assistant Professor & Director of NUILab",
+                      "position":"Assistant Professor & Director of NUILab",
                       "email":"fortega@colostate.edu",
                       "university": "Colorado State University (Fort Collins, CO)",
                       "cv":"http://nuilab.org/assets/images/people/francisco-ortega.pdf",
