@@ -486,11 +486,6 @@ export class EmployeeService {
                       "image":"assets/images/people/luis-averhoff.jpg",
                       "description":"Luis Averhoff was an undergraduate research assistant during fall 2017 until summer 2018."
                     },
-                    
-                    
-                  ],
-                  "BSN":
-                  [
                     {
                       "name":"Maia Obregon",
                       "education":"B.S.",
@@ -500,10 +495,13 @@ export class EmployeeService {
                       "email":"mzock001@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
-                      "image":"assets/images/people/openhid-logo.png",
+                      "image":"assets/images/people/maia-obregon.png",
                       "description":"Maia Obregon was an undergraduate research volunteer currently pursuing a Masters Degree."
                     }
-                  ]
+                    
+                    
+                  ],
+                  
                 }
               }
         );
