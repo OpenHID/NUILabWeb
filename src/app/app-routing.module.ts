@@ -12,7 +12,7 @@ import { ResourcesComponent }     from './resources/resources.component';
 import { TeachingComponent }      from './teaching/teaching.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  { path: '', redirectTo:'Home', pathMatch:'full' },
   { path: 'Home', component: HomeComponent },
   { path: 'About', component: AboutComponent },
   { path: 'Contact', component: ContactComponent },
@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'Publications', component: PublicationsComponent },
   { path: 'Resources', component: ResourcesComponent },
   { path: 'Teaching', component: TeachingComponent },
-  { path: '**', redirectTo: 'Home', pathMatch: 'full' }
+  //{ path: '**', redirectTo: 'Home', pathMatch: 'full' }
 ];
 
 @NgModule({

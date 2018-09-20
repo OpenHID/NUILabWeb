@@ -274,7 +274,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/jason-garcia.jpg",
-                      "description":"Undergraduate research assistant majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Mathematics and Computer Science."
                     },
                     {
                       "name":"Catherine Angelini",
