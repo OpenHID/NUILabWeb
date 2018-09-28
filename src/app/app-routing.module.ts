@@ -13,16 +13,23 @@ import { TeachingComponent }      from './teaching/teaching.component';
 
 const routes: Routes = [
   { path: '', redirectTo:'Home', pathMatch:'full' },
-  { path: 'Home', component: HomeComponent },
-  { path: 'About', component: AboutComponent },
-  { path: 'Contact', component: ContactComponent },
-  { path: 'Home', component: HomeComponent },
-  { path: 'Projects', component: ProjectsComponent },
-  { path: 'Events', component: EventsComponent },
-  { path: 'Publications', component: PublicationsComponent },
-  { path: 'Resources', component: ResourcesComponent },
-  { path: 'Teaching', component: TeachingComponent },
-  //{ path: '**', redirectTo: 'Home', pathMatch: 'full' }
+  { path: 'Home', component: HomeComponent  },
+  { path: 'home', component: HomeComponent  },
+  { path: 'About', component: AboutComponent  },
+  { path: 'about', component: AboutComponent  },
+  { path: 'Contact', component: ContactComponent  },
+  { path: 'contact', component: ContactComponent  },
+  { path: 'Projects', component: ProjectsComponent, },
+  { path: 'projects', component: ProjectsComponent, },
+  { path: 'Events', component: EventsComponent  },
+  { path: 'events', component: EventsComponent  },
+  { path: 'Publications', component: PublicationsComponent, },
+  { path: 'publications', component: PublicationsComponent, },
+  { path: 'Resources', component: ResourcesComponent  },
+  { path: 'resources', component: ResourcesComponent  },
+  { path: 'Teaching', component: TeachingComponent  },
+  { path: 'teaching', component: TeachingComponent  },
+  { path: '**', redirectTo: 'Home', pathMatch: 'full' }
 ];
 
 @NgModule({
