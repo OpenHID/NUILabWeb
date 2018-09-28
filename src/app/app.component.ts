@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'app';
 
   ngOnInit(): void {
-    this._router.navigate(['']);
+    //this._router.navigate(['']); //This was the culcript of the Routing issue
   }
   
 }
