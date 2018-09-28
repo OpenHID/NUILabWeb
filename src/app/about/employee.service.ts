@@ -351,6 +351,18 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/kellyn-dassler.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
+                    },
+                    {
+                      "name":"Ariana Mims",
+                      "education":"B.S.",
+                      "universtiy":"Colorado State University",
+                      "major":"Computer Science",
+                      "position":"Undergraduate Research Volunteer",
+                      "email":"aricmims@rams.colostate.edu",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "website":"website",
+                      "image":"assets/images/people/ariana-mims.png",
+                      "description":"Undergraduate research volunteer majoring Computer Science."
                     }
                   ],
                   "Affiliated":
