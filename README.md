@@ -58,6 +58,19 @@ This comand creates a local server and opens a Internet Application that shows y
 
 Every time you make a change in the site, the page will refresh automatically after saving the changes.
 
+NOTE: If Github ever tells you that the Repo contains vulnerabilities, run:
+
+```
+npm audit
+```
+
+And then run whatever commands it tells you to run to fix the vulnerabilities. DO NOT TRY:
+
+```
+npm audit --force
+```
+YOU'VE BEEN WARNED.
+
 ---
 
 Code away!
