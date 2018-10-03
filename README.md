@@ -58,6 +58,21 @@ This comand creates a local server and opens a Internet Application that shows y
 
 Every time you make a change in the site, the page will refresh automatically after saving the changes.
 
+If you need to run the website on your mobile:
+- Open CMD or your local terminal and type 'ipconfig' or the command to get the IPv4 address of your network.
+- Once you have that, use the following command to make your website available to all devices within the network:
+
+```
+ng serve --host [IPv4 Address]
+```
+
+NOTE: If you use this command , 'localhost' does not work anymore, you would have to type in your browser:
+
+```
+IPv4 Address: Port
+```
+Where the port you can either specify with the argument '--port' or is the default '4200'
+
 NOTE: If Github ever tells you that the Repo contains vulnerabilities, run:
 
 ```
