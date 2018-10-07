@@ -379,6 +379,18 @@ export class EmployeeService {
                       "image":"assets/images/people/eldimary-urdaneta.png",
                       "description":"Undergraduate research assistant majoring in Chemistry and a minor in Biology."
                     },
+                    {
+                      "name":"Diana Ugalde",
+                      "education":"B.S.",
+                      "universtiy":"Florida International Universty",
+                      "major":"Psychology",
+                      "position":"Undergraduate Research Assistant",
+                      "email":"dugal002@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"http://myweb.fiu.edu/vblee/students/",
+                      "image":"assets/images/people/diana-ugalde.png",
+                      "description":"Undergraduate research assistant majoring in Psychology."
+                    },
                   ]
                 },
                 "Former":
