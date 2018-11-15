@@ -42,7 +42,7 @@
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-10">
-                        <h3>{{person.name}}, {{person.education}}</h3>
+                        <a [href]="person.cv" target="NEW"><h3>{{person.name}}, {{person.education}}</h3></a>
                         <h5>{{person.position}}</h5>
                         <h5 style="color: rgb(34, 104, 45)">{{person.university}}</h5>
                         <p>{{person.email}}</p>
@@ -50,7 +50,7 @@
                     
                     <div class="col-md-2">
                         <a [href]="person.cv" target="NEW"><h5>CV</h5></a>
-                    </div>
+                    </div> 
                 </div>
                 <div class="row">
                     <div class="col-md-12" style="text-align:justify">
