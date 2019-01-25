@@ -24,7 +24,6 @@ export class EmployeeService {
                     {
                       "name":"Francisco R. Ortega",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Assistant Professor & Director of NUILab",
                       "email":"fortega@colostate.edu",
@@ -41,7 +40,6 @@ export class EmployeeService {
                     {
                       "name":"Bruce A. Draper",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Professor",
                       "email":"draper@colostate.edu",
@@ -54,7 +52,6 @@ export class EmployeeService {
                     {
                       "name":"Ross Beveridge",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Professor",
                       "email":"ross@cs.colostate.edu ",
@@ -72,7 +69,6 @@ export class EmployeeService {
                     {
                       "name":"Valentina Bruk-Lee",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Organizational Psychology",
                       "position":"Associate Professor",
                       "email":"vblee@fiu.edu",
@@ -85,7 +81,6 @@ export class EmployeeService {
                     {
                       "name":"Asia Eaton",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Psychology and Gender Studies",
                       "position":"Assistant Professor",
                       "email":"aeaton@fiu.edu",
@@ -98,7 +93,6 @@ export class EmployeeService {
                     {
                       "name":"Newton D’souza",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Architecture",
                       "position":"Chair and Associate Professor",
                       "email":"ndsouza@fiu.edu",
@@ -119,7 +113,6 @@ export class EmployeeService {
                     {
                       "name":"Bruce A. Draper",
                       "education":"Ph.D.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Professor",
                       "email":"draper@colostate.edu",
@@ -139,7 +132,6 @@ export class EmployeeService {
                       {
                         "name":"Adam Williams",
                         "education":"Ph.D.",
-                        "universtiy":"Florida International Universty",
                         "major":"Computer Science",
                         "position":"Graduate Research Assistant",
                         "email":"adam.sinclair.williams@colostate.edu",
@@ -154,7 +146,6 @@ export class EmployeeService {
                     {
                       "name":"Fernando de Zayas",
                       "education":"B.S.,M.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Graduate Research Assistant",
                       "email":"fdeza001@fiu.edu",
@@ -169,7 +160,6 @@ export class EmployeeService {
                     {
                       "name":"Aditya Raikwar",
                       "education":"B.S.,M.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Graduate Research Assistant",
                       "email":"aditya.raikwar@colostate.edu",
@@ -195,7 +185,6 @@ export class EmployeeService {
                     {
                       "name":"Cristina Villarroel",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"cvill141@fiu.edu",
@@ -207,7 +196,6 @@ export class EmployeeService {
                     {
                       "name":"Pablo Mueller",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"pmuel001@fiu.edu",
@@ -219,7 +207,6 @@ export class EmployeeService {
                     {
                       "name":"Andy Pujol",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"apujo010@fiu.edu",
@@ -231,7 +218,6 @@ export class EmployeeService {
                     {
                       "name":"Arelys Alvarez",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"aalva456@fiu.edu",
@@ -243,7 +229,6 @@ export class EmployeeService {
                     {
                       "name":"Santiago Bolivar",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"sboli001@fiu.edu",
@@ -255,7 +240,6 @@ export class EmployeeService {
                     {
                       "name":"Joseph Medina",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"jmedi145@fiu.edu",
@@ -267,7 +251,6 @@ export class EmployeeService {
                     {
                       "name":"Jason Garcia",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"jgarc429@fiu.edu",
@@ -279,7 +262,6 @@ export class EmployeeService {
                     {
                       "name":"Catherine Angelini",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Volunteer",
                       "email":"cange017@fiu.edu",
@@ -291,7 +273,6 @@ export class EmployeeService {
                     {
                       "name":"Ciana Rogers",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"ciana.rogers@gmail.com",
@@ -303,7 +284,6 @@ export class EmployeeService {
                     {
                       "name":"Fidel Hernandez",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"fhern103@fiu.edu",
@@ -315,7 +295,6 @@ export class EmployeeService {
                     {
                       "name":"Jessica Silva",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Volunteer",
                       "email":"jsilv039@fiu.edu",
@@ -327,7 +306,6 @@ export class EmployeeService {
                     {
                       "name":"Vanesa Perez",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"vpere159@fiu.edu",
@@ -343,7 +321,6 @@ export class EmployeeService {
                     {
                       "name":"Kellyn Dassler",
                       "education":"B.S.",
-                      "universtiy":"Colorado State University",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Assistant",
                       "email":"kellyndassler@gmail.com ",
@@ -355,7 +332,6 @@ export class EmployeeService {
                     {
                       "name":"Ariana Mims",
                       "education":"B.S.",
-                      "universtiy":"Colorado State University",
                       "major":"Computer Science",
                       "position":"Undergraduate Research Volunteer",
                       "email":"aricmims@rams.colostate.edu",
@@ -370,7 +346,6 @@ export class EmployeeService {
                     {
                       "name":"Edilmary Urdaneta",
                       "education":"B.A.",
-                      "universtiy":"Florida International Universty",
                       "major":"Chemistry",
                       "position":"Undergraduate Research Assistant",
                       "email":"eurda010@fiu.edu",
@@ -382,7 +357,6 @@ export class EmployeeService {
                     {
                       "name":"Diana Ugalde",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Psychology",
                       "position":"Undergraduate Research Assistant",
                       "email":"dugal002@fiu.edu",
@@ -402,7 +376,6 @@ export class EmployeeService {
                     {
                       "name":"Katherine Tarre",
                       "education":"B.S., M.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Statistics",
                       "position":"Ph.D. student at FIU with Dr. Naphtali D. Rishe",
                       "email":"ktarr007@fiu.edu",
@@ -414,7 +387,6 @@ export class EmployeeService {
                     {
                       "name":"Ruben Balcazar",
                       "education":"B.S.,M.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Biology, Computer Science",
                       "position":"Engineer at Ultimate Software (Former Graduate Research Assistant)",
                       "email":"rbalc001@fiu.edu",
@@ -426,7 +398,6 @@ export class EmployeeService {
                     {
                       "name":"Jules Calella",
                       "education":"B.S.,M.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Electrical Engineer",
                       "position":"Senior Electrical Engineer at BioBrace (Former Graduate Research Assistant)",
                       "email":"jcale004@fiu.edu",
@@ -438,7 +409,6 @@ export class EmployeeService {
                     {
                       "name":"Mathew Kress",
                       "education":"B.S., M.S",
-                      "universtiy":"Florida International Universty",
                       "major":"Software Engineering, Computer Engineering",
                       "position":"Former graduate Research Assistant",
                       "email":"mkres006@fiu.edu",
@@ -453,7 +423,6 @@ export class EmployeeService {
                     {
                       "name":"Alain Galvan",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Engineer at Marmoset Toolbag (Former Undergraduate Research Assistant)",
                       "email":"agalv023@fiu.edu",
@@ -465,7 +434,6 @@ export class EmployeeService {
                     {
                       "name":"Lukas Borges",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Engineer at Marmoset Toolbag (Former Undergraduate Research Assistant)",
                       "email":"lborg019@fiu.edu",
@@ -477,7 +445,6 @@ export class EmployeeService {
                     {
                       "name":"Jason Lee Thomas",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Senior Engineer at Citrix (Former Undergraduate Research Assistant)",
                       "email":"jasthoma@fiu.edu",
@@ -489,7 +456,6 @@ export class EmployeeService {
                     {
                       "name":"Jonathan Bernal",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Embeded Software Engineer at BioBrace (Former Undergraduate Gesture Research Assistant)",
                       "email":"jbern102@fiu.edu",
@@ -501,7 +467,6 @@ export class EmployeeService {
                     {
                       "name":"Luis Averhoff",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Computer Science",
                       "position":"Former Undergraduate Assistant",
                       "email":"laver008@fiu.edu",
@@ -513,7 +478,6 @@ export class EmployeeService {
                     {
                       "name":"Maia Obregon",
                       "education":"B.S.",
-                      "universtiy":"Florida International Universty",
                       "major":"Psychology",
                       "position":"Undergraduate Research Volunteer",
                       "email":"mzock001@fiu.edu",
