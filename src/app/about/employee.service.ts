@@ -167,6 +167,17 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/aditya-raikwar2.png",
                       "description":"Graduate research assistant researching 3D user interfaces using gesture and speech and with an interest in Machine Learning."
+                    },
+                    {
+                      "name":"Jason Garcia",
+                      "education":"B.S.,M.S.",
+                      "major":"Computer Science",
+                      "position":"Graduate Research Assistant",
+                      "email":"jgarc429@fiu.edu",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "website":"website",
+                      "image":"assets/images/people/jason-garcia.jpg",
+                      "description":"Graduate research assistant."
                     }
                   ],
                   "BS":
@@ -194,28 +205,6 @@ export class EmployeeService {
                       "description":"Cristina Villarroel is an undergraduate research assistant collaborating with OpenHID research."
                     },
                     {
-                      "name":"Pablo Mueller",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"pmuel001@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/pablo-mueller.jpg",
-                      "description":"Pablo Mueller is an undergraduate assistant researching gesture recognition."
-                    },
-                    {
-                      "name":"Andy Pujol",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"apujo010@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/andy-pujol.jpg",
-                      "description":"Undergraduate research assistant majoring in Computer Science and currently working on Web Development."
-                    },
-                    {
                       "name":"Arelys Alvarez",
                       "education":"B.S.",
                       "major":"Computer Science",
@@ -225,39 +214,6 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/arelys-alvarez.jpg",
                       "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    {
-                      "name":"Santiago Bolivar",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"sboli001@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/santiago-bolivar.jpg",
-                      "description":"Santiago Bolivar is an undergraduate assistant researching about the impact of Computer Science to interest minorities on persuing the major."
-                    },                  
-                    {
-                      "name":"Joseph Medina",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"jmedi145@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/joseph-medina.jpg",
-                      "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    {
-                      "name":"Jason Garcia",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"jgarc429@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/jason-garcia.jpg",
-                      "description":"Undergraduate research assistant majoring Mathematics and Computer Science."
                     },
                     {
                       "name":"Catherine Angelini",
@@ -271,17 +227,6 @@ export class EmployeeService {
                       "description":"Undergraduate research volunteer majoring Computer Science."
                     },
                     {
-                      "name":"Ciana Rogers",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"ciana.rogers@gmail.com",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/ciana-rogers.png",
-                      "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    {
                       "name":"Fidel Hernandez",
                       "education":"B.S.",
                       "major":"Computer Science",
@@ -290,28 +235,6 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/fidel-hernandez.png",
-                      "description":"Undergraduate research assistant majoring Computer Science."
-                    },
-                    {
-                      "name":"Jessica Silva",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Volunteer",
-                      "email":"jsilv039@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/jessica-silva.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
-                    },
-                    {
-                      "name":"Vanesa Perez",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"vpere159@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/vanesa-perez.png",
                       "description":"Undergraduate research assistant majoring Computer Science."
                     }
                   ],
@@ -485,6 +408,83 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/maia-obregon.png",
                       "description":"Maia Obregon was an undergraduate research volunteer currently pursuing a Masters Degree."
+                    },
+                    {
+                      "name":"Pablo Mueller",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Software Engineer at JP Morgan Chase (Former Undergraduate Research Assistant)",
+                      "email":"pmuel001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/pablo-mueller.jpg",
+                      "description":"Pablo Mueller was an undergraduate research assistant researching gesture recognition."
+                    },
+                    {
+                      "name":"Andy Pujol",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Jr. Web Developer at Carnival Cruises (Former Undergraduate Research Assistant)",
+                      "email":"apujo010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/andy-pujol.jpg",
+                      "description":"Andy Pujol was an undergraduate research assistant working on Web Development."
+                    },
+                    {
+                      "name":"Joseph Medina",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Former Undergraduate Research Assistant",
+                      "email":"jmedi145@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/joseph-medina.jpg",
+                      "description":"Former undergraduate research assistant majoring Computer Science."
+                    },
+                    {
+                      "name":"Ciana Rogers",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Former Undergraduate Research Assistant",
+                      "email":"ciana.rogers@gmail.com",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/ciana-rogers.png",
+                      "description":"Former undergraduate research assistant majoring Computer Science."
+                    },
+                    {
+                      "name":"Vanesa Perez",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Former Undergraduate Research Assistant",
+                      "email":"vpere159@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/vanesa-perez.png",
+                      "description":"Former undergraduate research assistant majoring Computer Science."
+                    },
+                    {
+                      "name":"Jessica Silva",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Former Undergraduate Research Volunteer",
+                      "email":"jsilv039@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/jessica-silva.png",
+                      "description":"Former undergraduate research volunteer majoring Computer Science."
+                    },
+                    {
+                      "name":"Santiago Bolivar",
+                      "education":"B.S.",
+                      "major":"Computer Science",
+                      "position":"Former Undergraduate Research Assistant",
+                      "email":"sboli001@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/santiago-bolivar.jpg",
+                      "description":"Santiago Bolivar was an undergraduate assistant researching about the impact of Computer Science to interest minorities on persuing the major."
                     }
                     
                     
