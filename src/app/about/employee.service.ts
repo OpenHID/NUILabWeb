@@ -178,6 +178,28 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/jason-garcia.jpg",
                       "description":"Graduate research assistant."
+                    },
+                    {
+                      "name":"Zahra Borhani",
+                      "education":"B.S.,M.S.",
+                      "major":"Computer Science",
+                      "position":"Graduate Research Assistant",
+                      "email":"zahra.borhani@colostate.edu",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "website":"website",
+                      "image":"assets/images/people/Faezeh_s.jpg",
+                      "description":"Graduate research assistant with an interest in studying avatars and their applications in virtual reality."
+                    },
+                    {
+                      "name":"Vidya Gaddy",
+                      "education":"B.S.,M.S.",
+                      "major":"Computer Science",
+                      "position":"Graduate Research Assistant",
+                      "email":"vidyagaddy@gmail.com",
+                      "university": "Colorado State University (Fort Collins, CO)",
+                      "website":"website",
+                      "image":"assets/images/people/vidya_gaddy.jpg",
+                      "description":"Vidya is interested in developing tools to encourage young women to get involved in computer science while in college. With a passion for psychology and a B.S. in computer science, she is programming a serious game with the goal of subtly introducing computer science concepts and terminology to the audience of the game."
                     }
                   ],
                   "BS":
@@ -202,7 +224,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/cristina-villarroel.jpg",
-                      "description":"Cristina Villarroel is an undergraduate research assistant collaborating with OpenHID research."
+                      "description":"Cristina Villarroel is an undergraduate research assistant majoring in Computer Science. She is currently an intern at Visa Inc."
                     },
                     {
                       "name":"Arelys Alvarez",
@@ -213,7 +235,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/arelys-alvarez.jpg",
-                      "description":"Undergraduate research assistant majoring Computer Science."
+                      "description":"Undergraduate research assistant majoring Computer Science. She is currently an intern at Cigna."
                     },
                     {
                       "name":"Catherine Angelini",
@@ -224,7 +246,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/catherine-angelini.png",
-                      "description":"Undergraduate research volunteer majoring Computer Science."
+                      "description":"Undergraduate research volunteer majoring Computer Science. She is currently an intern at Microsoft Corporation"
                     },
                     {
                       "name":"Fidel Hernandez",
@@ -267,17 +289,6 @@ export class EmployeeService {
                   "Affiliated":
                   [
                     {
-                      "name":"Edilmary Urdaneta",
-                      "education":"B.A.",
-                      "major":"Chemistry",
-                      "position":"Undergraduate Research Assistant",
-                      "email":"eurda010@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"http://pwrlab.fiu.edu/members/",
-                      "image":"assets/images/people/eldimary-urdaneta.png",
-                      "description":"Undergraduate research assistant majoring in Chemistry and a minor in Biology."
-                    },
-                    {
                       "name":"Diana Ugalde",
                       "education":"B.S.",
                       "major":"Psychology",
@@ -305,7 +316,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/katherine-tarre.jpg",
-                      "description":"Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving. Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving."
+                      "description":"Katherine Tarre is an undergraduate research assistant majoring in Statistics and International Relations. Her work is primarily focused on experimental design and statistical analysis using various computer software. In her free time she enjoys reading and problem solving."
                     },
                     {
                       "name":"Ruben Balcazar",
@@ -316,7 +327,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/ruben-balcazar.jpg",
-                      "description":"Ruben Balcazar was a graduate research assistant for the OpenHID Lab. His contributions include Unity plugins for OpenHID compliant hardware."
+                      "description":"Ruben Balcazar was a graduate research assistant for the OpenHID Lab. His contributions include Unity plugins for OpenHID compliant hardware. He also interned at Ultimate Software before obtaining a full time position."
                     },
                     {
                       "name":"Jules Calella",
@@ -339,7 +350,18 @@ export class EmployeeService {
                       "website":"website",
                       "image":"assets/images/people/mathew-kress.jpg",
                       "description":"Mathew Kress is a graduate volunteer working on applications with the HTC Vive and Hololens."
-                    }
+                    },
+                    {
+                      "name":"Jessica Silva",
+                      "education":"B.S., M.S.",
+                      "major":"Computer Science",
+                      "position":"Former Undergraduate Research Volunteer",
+                      "email":"jsilv039@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"website",
+                      "image":"assets/images/people/jessica-silva.png",
+                      "description":"Former undergraduate research volunteer who majored in Computer Science."
+                    },
                   ],
                   "BS":
                   [
@@ -363,7 +385,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/lukas-borges.jpg",
-                      "description":"Lukas is an undergraduate focused on Augmented Reality and Game Development in Unity."
+                      "description":"Lukas is a former undergraduate student who focused on Augmented Reality and Game Development in Unity."
                     },
                     {
                       "name":"Jason Lee Thomas",
@@ -418,7 +440,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/pablo-mueller.jpg",
-                      "description":"Pablo Mueller was an undergraduate research assistant researching gesture recognition."
+                      "description":"Pablo Mueller was an undergraduate research assistant who focused on gesture recognition."
                     },
                     {
                       "name":"Andy Pujol",
@@ -429,18 +451,18 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/andy-pujol.jpg",
-                      "description":"Andy Pujol was an undergraduate research assistant working on Web Development."
+                      "description":"Andy Pujol was an undergraduate research assistant who worked on Web Development."
                     },
                     {
                       "name":"Joseph Medina",
                       "education":"B.S.",
                       "major":"Computer Science",
-                      "position":"Former Undergraduate Research Assistant",
+                      "position":"Automation Engineer at Accelirate Inc. (Former Undergraduate Research Assistant)",
                       "email":"jmedi145@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/joseph-medina.jpg",
-                      "description":"Former undergraduate research assistant majoring Computer Science."
+                      "description":"Former undergraduate research assistant who majored in Computer Science."
                     },
                     {
                       "name":"Ciana Rogers",
@@ -451,7 +473,7 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/ciana-rogers.png",
-                      "description":"Former undergraduate research assistant majoring Computer Science."
+                      "description":"Former undergraduate research assistant who majored in Computer Science."
                     },
                     {
                       "name":"Vanesa Perez",
@@ -462,29 +484,29 @@ export class EmployeeService {
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/vanesa-perez.png",
-                      "description":"Former undergraduate research assistant majoring Computer Science."
-                    },
-                    {
-                      "name":"Jessica Silva",
-                      "education":"B.S.",
-                      "major":"Computer Science",
-                      "position":"Former Undergraduate Research Volunteer",
-                      "email":"jsilv039@fiu.edu",
-                      "university": "Florida International University (Miami, FL)",
-                      "website":"website",
-                      "image":"assets/images/people/jessica-silva.png",
-                      "description":"Former undergraduate research volunteer majoring Computer Science."
+                      "description":"Former undergraduate research assistant who majored in Computer Science."
                     },
                     {
                       "name":"Santiago Bolivar",
                       "education":"B.S.",
                       "major":"Computer Science",
-                      "position":"Former Undergraduate Research Assistant",
+                      "position":"Director of Creative Technologies at Dan Marino Foundation (Former Undergraduate Research Assistant)",
                       "email":"sboli001@fiu.edu",
                       "university": "Florida International University (Miami, FL)",
                       "website":"website",
                       "image":"assets/images/people/santiago-bolivar.jpg",
-                      "description":"Santiago Bolivar was an undergraduate assistant researching about the impact of Computer Science to interest minorities on persuing the major."
+                      "description":"Santiago Bolivar was an undergraduate research assistant who researched on the impact of Computer Science to interest minorities on pursuing the major."
+                    },
+                    {
+                      "name":"Edilmary Urdaneta",
+                      "education":"B.A.",
+                      "major":"Chemistry",
+                      "position":"Former Undergraduate Research Assistant",
+                      "email":"eurda010@fiu.edu",
+                      "university": "Florida International University (Miami, FL)",
+                      "website":"http://pwrlab.fiu.edu/members/",
+                      "image":"assets/images/people/eldimary-urdaneta.png",
+                      "description":"Former undergraduate research assistant who majored in Chemistry and minored in Biology."
                     }
                     
                     
